@@ -1,0 +1,30 @@
+[2020-01-08 19:00:48,741] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.start_processing_tables_in_database 2020-01-08T19:00:42.082277+00:00 [queued]>
+[2020-01-08 19:00:48,817] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.start_processing_tables_in_database 2020-01-08T19:00:42.082277+00:00 [queued]>
+[2020-01-08 19:00:48,819] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 19:00:48,819] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-08 19:00:48,820] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 19:00:48,904] {taskinstance.py:862} INFO - Executing <Task(PythonOperator): start_processing_tables_in_database> on 2020-01-08T19:00:42.082277+00:00
+[2020-01-08 19:00:48,904] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'dag_id_0', 'start_processing_tables_in_database', '2020-01-08T19:00:42.082277+00:00', '--job_id', '86', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/jobs_dag.py', '--cfg_path', '/tmp/tmpkalv895l']
+[2020-01-08 19:00:50,253] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 19:00:50,253] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database   FutureWarning
+[2020-01-08 19:00:50,254] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 19:00:50,254] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 19:00:50,254] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 19:00:50,255] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 19:00:50,255] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 19:00:50,256] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 19:00:50,405] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database [2020-01-08 19:00:50,405] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1598
+[2020-01-08 19:00:51,381] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database [2020-01-08 19:00:51,381] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 19:00:51,382] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database [2020-01-08 19:00:51,381] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/jobs_dag.py
+[2020-01-08 19:00:51,664] {base_task_runner.py:115} INFO - Job 86: Subtask start_processing_tables_in_database [2020-01-08 19:00:51,663] {cli.py:545} INFO - Running <TaskInstance: dag_id_0.start_processing_tables_in_database 2020-01-08T19:00:42.082277+00:00 [running]> on host 6667999380fe
+[2020-01-08 19:00:51,771] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=dag_id_0
+AIRFLOW_CTX_TASK_ID=start_processing_tables_in_database
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-08T19:00:42.082277+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2020-01-08T19:00:42.082277+00:00
+[2020-01-08 19:00:51,773] {logging_mixin.py:112} INFO - [2020-01-08 19:00:51,772] {jobs_dag.py:24} INFO - dag_id_0 start processing tables in database: db_name
+[2020-01-08 19:00:51,774] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-01-08 19:00:53,646] {logging_mixin.py:112} INFO - [2020-01-08 19:00:53,646] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948555 s
+[2020-01-08 19:00:58,600] {logging_mixin.py:112} INFO - [2020-01-08 19:00:58,599] {local_task_job.py:103} INFO - Task exited with return code 0

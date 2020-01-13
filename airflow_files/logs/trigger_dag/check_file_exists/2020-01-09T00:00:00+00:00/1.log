@@ -1,0 +1,48 @@
+[2020-01-10 06:42:05,725] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.check_file_exists 2020-01-09T00:00:00+00:00 [queued]>
+[2020-01-10 06:42:05,788] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.check_file_exists 2020-01-09T00:00:00+00:00 [queued]>
+[2020-01-10 06:42:05,788] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-10 06:42:05,788] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-10 06:42:05,789] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-10 06:42:05,838] {taskinstance.py:862} INFO - Executing <Task(FileSensor): check_file_exists> on 2020-01-09T00:00:00+00:00
+[2020-01-10 06:42:05,838] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag', 'check_file_exists', '2020-01-09T00:00:00+00:00', '--job_id', '129', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmp5bpcfzo5']
+[2020-01-10 06:42:06,480] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-10 06:42:06,481] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists   FutureWarning
+[2020-01-10 06:42:06,481] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-10 06:42:06,482] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-10 06:42:06,482] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-10 06:42:06,482] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-10 06:42:06,483] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-10 06:42:06,483] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-10 06:42:06,640] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists [2020-01-10 06:42:06,639] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1052
+[2020-01-10 06:42:07,453] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists [2020-01-10 06:42:07,453] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-10 06:42:07,454] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists [2020-01-10 06:42:07,453] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-10 06:42:07,681] {base_task_runner.py:115} INFO - Job 129: Subtask check_file_exists [2020-01-10 06:42:07,680] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.check_file_exists 2020-01-09T00:00:00+00:00 [running]> on host 1c4e6c681e44
+[2020-01-10 06:42:07,810] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-10 06:42:10,679] {logging_mixin.py:112} INFO - [2020-01-10 06:42:10,679] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959721 s
+[2020-01-10 06:42:15,775] {logging_mixin.py:112} INFO - [2020-01-10 06:42:15,775] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.943531 s
+[2020-01-10 06:42:20,845] {logging_mixin.py:112} INFO - [2020-01-10 06:42:20,845] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963123 s
+[2020-01-10 06:42:25,937] {logging_mixin.py:112} INFO - [2020-01-10 06:42:25,936] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957436 s
+[2020-01-10 06:42:27,859] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-10 06:42:32,955] {logging_mixin.py:112} INFO - [2020-01-10 06:42:32,955] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.941323 s
+[2020-01-10 06:42:38,038] {logging_mixin.py:112} INFO - [2020-01-10 06:42:38,038] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952088 s
+[2020-01-10 06:42:43,094] {logging_mixin.py:112} INFO - [2020-01-10 06:42:43,094] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969742 s
+[2020-01-10 06:42:48,167] {logging_mixin.py:112} INFO - [2020-01-10 06:42:48,166] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952734 s
+[2020-01-10 06:42:48,360] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-10 06:42:53,244] {logging_mixin.py:112} INFO - [2020-01-10 06:42:53,244] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959912 s
+[2020-01-10 06:42:58,312] {logging_mixin.py:112} INFO - [2020-01-10 06:42:58,312] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962996 s
+[2020-01-10 06:43:03,689] {logging_mixin.py:112} INFO - [2020-01-10 06:43:03,689] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960695 s
+[2020-01-10 06:43:08,735] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-10 06:43:08,812] {logging_mixin.py:112} INFO - [2020-01-10 06:43:08,812] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.943237 s
+[2020-01-10 06:43:13,896] {logging_mixin.py:112} INFO - [2020-01-10 06:43:13,896] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955688 s
+[2020-01-10 06:43:19,060] {logging_mixin.py:112} INFO - [2020-01-10 06:43:19,059] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.935452 s
+[2020-01-10 06:43:24,486] {logging_mixin.py:112} INFO - [2020-01-10 06:43:24,486] {local_task_job.py:124} WARNING - Time since last heartbeat(0.11 s) < heartrate(5.0 s), sleeping for 4.894276 s
+[2020-01-10 06:43:28,788] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-10 09:00:05,355] {logging_mixin.py:112} INFO - [2020-01-10 09:00:05,355] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.928543 s
+[2020-01-10 09:00:10,380] {logging_mixin.py:112} INFO - [2020-01-10 09:00:10,379] {local_task_job.py:167} WARNING - State of this instance has been externally set to failed. Taking the poison pill.
+[2020-01-10 09:00:10,381] {helpers.py:308} INFO - Sending Signals.SIGTERM to GPID 1052
+[2020-01-10 09:00:10,382] {taskinstance.py:905} ERROR - Received SIGTERM. Terminating subprocesses.
+[2020-01-10 09:00:10,644] {helpers.py:286} INFO - Process psutil.Process(pid=1052, status='terminated') (1052) terminated with exit code 0
+[2020-01-10 09:00:10,647] {logging_mixin.py:112} INFO - [2020-01-10 09:00:10,647] {local_task_job.py:124} WARNING - Time since last heartbeat(0.30 s) < heartrate(5.0 s), sleeping for 4.704651 s
+[2020-01-10 09:00:15,365] {logging_mixin.py:112} INFO - [2020-01-10 09:00:15,361] {local_task_job.py:103} INFO - Task exited with return code 0

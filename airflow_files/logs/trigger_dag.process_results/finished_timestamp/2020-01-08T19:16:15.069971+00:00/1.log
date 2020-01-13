@@ -1,0 +1,34 @@
+[2020-01-08 19:18:59,539] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.finished_timestamp 2020-01-08T19:16:15.069971+00:00 [queued]>
+[2020-01-08 19:18:59,683] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.finished_timestamp 2020-01-08T19:16:15.069971+00:00 [queued]>
+[2020-01-08 19:18:59,686] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 19:18:59,690] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-08 19:18:59,691] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 19:18:59,766] {taskinstance.py:862} INFO - Executing <Task(BashOperator): finished_timestamp> on 2020-01-08T19:16:15.069971+00:00
+[2020-01-08 19:18:59,768] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag.process_results', 'finished_timestamp', '2020-01-08T19:16:15.069971+00:00', '--job_id', '110', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmp7p5ruqi4']
+[2020-01-08 19:19:00,664] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 19:19:00,665] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp   FutureWarning
+[2020-01-08 19:19:00,665] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 19:19:00,666] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 19:19:00,666] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 19:19:00,666] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 19:19:00,667] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 19:19:00,667] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 19:19:00,771] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp [2020-01-08 19:19:00,771] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1921
+[2020-01-08 19:19:01,684] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp [2020-01-08 19:19:01,683] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 19:19:01,689] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp [2020-01-08 19:19:01,689] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-08 19:19:01,980] {base_task_runner.py:115} INFO - Job 110: Subtask finished_timestamp [2020-01-08 19:19:01,979] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.process_results.finished_timestamp 2020-01-08T19:16:15.069971+00:00 [running]> on host 6667999380fe
+[2020-01-08 19:19:02,133] {bash_operator.py:81} INFO - Tmp dir root location: 
+ /tmp
+[2020-01-08 19:19:02,134] {bash_operator.py:91} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=trigger_dag.process_results
+AIRFLOW_CTX_TASK_ID=finished_timestamp
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-08T19:16:15.069971+00:00
+AIRFLOW_CTX_DAG_RUN_ID=backfill_2020-01-08T19:16:15.069971+00:00
+[2020-01-08 19:19:02,135] {bash_operator.py:105} INFO - Temporary script location: /tmp/airflowtmpiinb25j0/finished_timestampnd0p1srp
+[2020-01-08 19:19:02,135] {bash_operator.py:115} INFO - Running command: touch $AIRFLOW_HOME/finished_20200108T191615
+[2020-01-08 19:19:02,149] {bash_operator.py:124} INFO - Output:
+[2020-01-08 19:19:02,176] {bash_operator.py:132} INFO - Command exited with return code 0
+[2020-01-08 19:19:04,517] {logging_mixin.py:112} INFO - [2020-01-08 19:19:04,516] {local_task_job.py:124} WARNING - Time since last heartbeat(0.09 s) < heartrate(5.0 s), sleeping for 4.914992 s
+[2020-01-08 19:19:09,400] {logging_mixin.py:112} INFO - [2020-01-08 19:19:09,400] {local_task_job.py:103} INFO - Task exited with return code 0

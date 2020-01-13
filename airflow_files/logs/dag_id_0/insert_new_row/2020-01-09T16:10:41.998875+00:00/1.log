@@ -1,0 +1,26 @@
+[2020-01-09 16:12:58,861] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.insert_new_row 2020-01-09T16:10:41.998875+00:00 [queued]>
+[2020-01-09 16:12:59,120] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.insert_new_row 2020-01-09T16:10:41.998875+00:00 [queued]>
+[2020-01-09 16:12:59,126] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-09 16:12:59,127] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-09 16:12:59,127] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-09 16:12:59,237] {taskinstance.py:862} INFO - Executing <Task(PostgresOperator): insert_new_row> on 2020-01-09T16:10:41.998875+00:00
+[2020-01-09 16:12:59,238] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'dag_id_0', 'insert_new_row', '2020-01-09T16:10:41.998875+00:00', '--job_id', '123', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/jobs_dag.py', '--cfg_path', '/tmp/tmpg0axj96f']
+[2020-01-09 16:13:02,380] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-09 16:13:02,381] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row   FutureWarning
+[2020-01-09 16:13:02,381] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-09 16:13:02,382] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-09 16:13:02,382] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-09 16:13:02,383] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-09 16:13:02,384] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-09 16:13:02,385] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-09 16:13:02,858] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row [2020-01-09 16:13:02,856] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=154
+[2020-01-09 16:13:03,849] {logging_mixin.py:112} INFO - [2020-01-09 16:13:03,848] {local_task_job.py:124} WARNING - Time since last heartbeat(0.08 s) < heartrate(5.0 s), sleeping for 4.924255 s
+[2020-01-09 16:13:04,545] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row [2020-01-09 16:13:04,544] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-09 16:13:04,546] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row [2020-01-09 16:13:04,545] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/jobs_dag.py
+[2020-01-09 16:13:04,686] {base_task_runner.py:115} INFO - Job 123: Subtask insert_new_row [2020-01-09 16:13:04,685] {cli.py:545} INFO - Running <TaskInstance: dag_id_0.insert_new_row 2020-01-09T16:10:41.998875+00:00 [running]> on host 68423a1cda8f
+[2020-01-09 16:13:04,793] {postgres_operator.py:62} INFO - Executing: INSERT INTO clients VALUES(%s, '', %s)
+[2020-01-09 16:13:04,823] {logging_mixin.py:112} INFO - [2020-01-09 16:13:04,823] {base_hook.py:84} INFO - Using connection to: id: postgres_default. Host: postgres, Port: 5432, Schema: airflow, Login: airflow, Password: XXXXXXXX, extra: {}
+[2020-01-09 16:13:04,844] {logging_mixin.py:112} INFO - [2020-01-09 16:13:04,844] {dbapi_hook.py:168} INFO - INSERT INTO clients VALUES(%s, '', %s) with parameters (51282160, datetime.datetime(2020, 1, 9, 16, 13, 4, 601155))
+[2020-01-09 16:13:08,779] {logging_mixin.py:112} INFO - [2020-01-09 16:13:08,778] {local_task_job.py:103} INFO - Task exited with return code 0

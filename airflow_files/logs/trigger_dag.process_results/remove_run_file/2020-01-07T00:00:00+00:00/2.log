@@ -1,0 +1,59 @@
+[2020-01-08 17:28:16,160] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.remove_run_file 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:28:16,260] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.remove_run_file 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:28:16,260] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:28:16,261] {taskinstance.py:842} INFO - Starting attempt 2 of 2
+[2020-01-08 17:28:16,262] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:28:16,312] {taskinstance.py:862} INFO - Executing <Task(BashOperator): remove_run_file> on 2020-01-07T00:00:00+00:00
+[2020-01-08 17:28:16,314] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag.process_results', 'remove_run_file', '2020-01-07T00:00:00+00:00', '--job_id', '67', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmp_a851lbc']
+[2020-01-08 17:28:17,173] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 17:28:17,174] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   FutureWarning
+[2020-01-08 17:28:17,175] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 17:28:17,175] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 17:28:17,176] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 17:28:17,177] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 17:28:17,177] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 17:28:17,178] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 17:28:17,301] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file [2020-01-08 17:28:17,301] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=410
+[2020-01-08 17:28:17,891] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file [2020-01-08 17:28:17,890] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 17:28:17,891] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file [2020-01-08 17:28:17,891] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-08 17:28:18,136] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file [2020-01-08 17:28:18,135] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.process_results.remove_run_file 2020-01-07T00:00:00+00:00 [running]> on host 4c15a692b677
+[2020-01-08 17:28:18,250] {bash_operator.py:81} INFO - Tmp dir root location: 
+ /tmp
+[2020-01-08 17:28:18,251] {bash_operator.py:91} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=trigger_dag.process_results
+AIRFLOW_CTX_TASK_ID=remove_run_file
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-07T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=backfill_2020-01-07T00:00:00+00:00
+[2020-01-08 17:28:18,252] {bash_operator.py:105} INFO - Temporary script location: /tmp/airflowtmplr3h5ipl/remove_run_filel84vul0o
+[2020-01-08 17:28:18,253] {bash_operator.py:115} INFO - Running command: rm $AIRFLOW_HOME/input/run
+[2020-01-08 17:28:18,261] {bash_operator.py:124} INFO - Output:
+[2020-01-08 17:28:18,264] {bash_operator.py:128} INFO - rm: cannot remove '/usr/local/airflow/input/run': No such file or directory
+[2020-01-08 17:28:18,264] {bash_operator.py:132} INFO - Command exited with return code 1
+[2020-01-08 17:28:18,314] {taskinstance.py:1058} ERROR - Bash command failed
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 930, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/usr/local/lib/python3.7/site-packages/airflow/operators/bash_operator.py", line 136, in execute
+    raise AirflowException("Bash command failed")
+airflow.exceptions.AirflowException: Bash command failed
+[2020-01-08 17:28:18,317] {taskinstance.py:1089} INFO - Marking task as FAILED.
+[2020-01-08 17:28:18,392] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file Traceback (most recent call last):
+[2020-01-08 17:28:18,392] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   File "/usr/local/bin/airflow", line 37, in <module>
+[2020-01-08 17:28:18,393] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file     args.func(args)
+[2020-01-08 17:28:18,393] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   File "/usr/local/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2020-01-08 17:28:18,394] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file     return f(*args, **kwargs)
+[2020-01-08 17:28:18,394] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 551, in run
+[2020-01-08 17:28:18,395] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file     _run(args, dag, ti)
+[2020-01-08 17:28:18,395] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 469, in _run
+[2020-01-08 17:28:18,396] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file     pool=args.pool,
+[2020-01-08 17:28:18,396] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2020-01-08 17:28:18,397] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file     return func(*args, **kwargs)
+[2020-01-08 17:28:18,398] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 930, in _run_raw_task
+[2020-01-08 17:28:18,399] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file     result = task_copy.execute(context=context)
+[2020-01-08 17:28:18,399] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file   File "/usr/local/lib/python3.7/site-packages/airflow/operators/bash_operator.py", line 136, in execute
+[2020-01-08 17:28:18,400] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file     raise AirflowException("Bash command failed")
+[2020-01-08 17:28:18,400] {base_task_runner.py:115} INFO - Job 67: Subtask remove_run_file airflow.exceptions.AirflowException: Bash command failed
+[2020-01-08 17:28:21,126] {logging_mixin.py:112} INFO - [2020-01-08 17:28:21,126] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.949348 s
+[2020-01-08 17:28:26,082] {logging_mixin.py:112} INFO - [2020-01-08 17:28:26,081] {local_task_job.py:103} INFO - Task exited with return code 1

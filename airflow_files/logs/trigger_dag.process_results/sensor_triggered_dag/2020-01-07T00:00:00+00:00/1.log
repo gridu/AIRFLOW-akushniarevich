@@ -1,0 +1,75 @@
+[2020-01-08 17:24:00,000] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.sensor_triggered_dag 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:24:00,292] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.sensor_triggered_dag 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:24:00,292] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:24:00,294] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-08 17:24:00,295] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:24:00,464] {taskinstance.py:862} INFO - Executing <Task(ExternalTaskSensor): sensor_triggered_dag> on 2020-01-07T00:00:00+00:00
+[2020-01-08 17:24:00,469] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag.process_results', 'sensor_triggered_dag', '2020-01-07T00:00:00+00:00', '--job_id', '56', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmpn83se_61']
+[2020-01-08 17:24:02,824] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 17:24:02,825] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag   FutureWarning
+[2020-01-08 17:24:02,826] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 17:24:02,826] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 17:24:02,827] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 17:24:02,829] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 17:24:02,829] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 17:24:02,830] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 17:24:03,221] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag [2020-01-08 17:24:03,221] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=325
+[2020-01-08 17:24:04,602] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag [2020-01-08 17:24:04,601] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 17:24:04,603] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag [2020-01-08 17:24:04,602] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-08 17:24:04,912] {base_task_runner.py:115} INFO - Job 56: Subtask sensor_triggered_dag [2020-01-08 17:24:04,912] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.process_results.sensor_triggered_dag 2020-01-07T00:00:00+00:00 [running]> on host 6667999380fe
+[2020-01-08 17:24:05,093] {logging_mixin.py:112} INFO - [2020-01-08 17:24:05,091] {local_task_job.py:124} WARNING - Time since last heartbeat(0.16 s) < heartrate(5.0 s), sleeping for 4.839793 s
+[2020-01-08 17:24:05,251] {external_task_sensor.py:113} INFO - Poking for dag_id_0.None on 2020-01-07T00:00:00+00:00 ... 
+[2020-01-08 17:24:05,455] {taskinstance.py:1054} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2020-01-08 17:24:09,942] {logging_mixin.py:112} INFO - [2020-01-08 17:24:09,942] {local_task_job.py:103} INFO - Task exited with return code 0
+[2020-01-08 17:24:35,274] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.sensor_triggered_dag 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:24:35,361] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.sensor_triggered_dag 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:24:35,361] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:24:35,362] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-08 17:24:35,362] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:24:35,422] {taskinstance.py:862} INFO - Executing <Task(ExternalTaskSensor): sensor_triggered_dag> on 2020-01-07T00:00:00+00:00
+[2020-01-08 17:24:35,423] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag.process_results', 'sensor_triggered_dag', '2020-01-07T00:00:00+00:00', '--job_id', '60', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmpdtgm4ckf']
+[2020-01-08 17:24:36,278] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 17:24:36,279] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag   FutureWarning
+[2020-01-08 17:24:36,279] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 17:24:36,279] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 17:24:36,280] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 17:24:36,280] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 17:24:36,281] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 17:24:36,281] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 17:24:36,382] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag [2020-01-08 17:24:36,382] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=342
+[2020-01-08 17:24:37,340] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag [2020-01-08 17:24:37,340] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 17:24:37,341] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag [2020-01-08 17:24:37,340] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-08 17:24:37,671] {base_task_runner.py:115} INFO - Job 60: Subtask sensor_triggered_dag [2020-01-08 17:24:37,664] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.process_results.sensor_triggered_dag 2020-01-07T00:00:00+00:00 [running]> on host 6667999380fe
+[2020-01-08 17:24:37,828] {external_task_sensor.py:113} INFO - Poking for dag_id_0.None on 2020-01-07T00:00:00+00:00 ... 
+[2020-01-08 17:24:37,958] {taskinstance.py:1054} INFO - Rescheduling task, marking task as UP_FOR_RESCHEDULE
+[2020-01-08 17:24:40,326] {logging_mixin.py:112} INFO - [2020-01-08 17:24:40,326] {local_task_job.py:124} WARNING - Time since last heartbeat(0.08 s) < heartrate(5.0 s), sleeping for 4.915582 s
+[2020-01-08 17:24:45,213] {logging_mixin.py:112} INFO - [2020-01-08 17:24:45,212] {local_task_job.py:103} INFO - Task exited with return code 0
+[2020-01-08 17:25:10,967] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.sensor_triggered_dag 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:25:11,037] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results.sensor_triggered_dag 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:25:11,039] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:25:11,041] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-08 17:25:11,047] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:25:11,191] {taskinstance.py:862} INFO - Executing <Task(ExternalTaskSensor): sensor_triggered_dag> on 2020-01-07T00:00:00+00:00
+[2020-01-08 17:25:11,192] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag.process_results', 'sensor_triggered_dag', '2020-01-07T00:00:00+00:00', '--job_id', '62', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmpiwnaie6v']
+[2020-01-08 17:25:12,848] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 17:25:12,848] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag   FutureWarning
+[2020-01-08 17:25:12,849] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 17:25:12,849] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 17:25:12,850] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 17:25:12,850] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 17:25:12,851] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 17:25:12,851] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 17:25:12,969] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag [2020-01-08 17:25:12,968] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=365
+[2020-01-08 17:25:13,990] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag [2020-01-08 17:25:13,990] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 17:25:13,991] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag [2020-01-08 17:25:13,991] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-08 17:25:14,437] {base_task_runner.py:115} INFO - Job 62: Subtask sensor_triggered_dag [2020-01-08 17:25:14,434] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.process_results.sensor_triggered_dag 2020-01-07T00:00:00+00:00 [running]> on host 6667999380fe
+[2020-01-08 17:25:14,674] {external_task_sensor.py:113} INFO - Poking for dag_id_0.None on 2020-01-07T00:00:00+00:00 ... 
+[2020-01-08 17:25:14,755] {base_sensor_operator.py:123} INFO - Success criteria met. Exiting.
+[2020-01-08 17:25:15,880] {logging_mixin.py:112} INFO - [2020-01-08 17:25:15,880] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954742 s
+[2020-01-08 17:25:20,839] {logging_mixin.py:112} INFO - [2020-01-08 17:25:20,838] {local_task_job.py:103} INFO - Task exited with return code 0

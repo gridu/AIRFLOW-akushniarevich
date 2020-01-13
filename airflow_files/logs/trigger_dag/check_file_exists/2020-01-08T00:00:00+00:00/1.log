@@ -1,0 +1,25 @@
+[2020-01-09 07:27:25,079] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.check_file_exists 2020-01-08T00:00:00+00:00 [queued]>
+[2020-01-09 07:27:25,263] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.check_file_exists 2020-01-08T00:00:00+00:00 [queued]>
+[2020-01-09 07:27:25,264] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-09 07:27:25,264] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-09 07:27:25,264] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-09 07:27:25,321] {taskinstance.py:862} INFO - Executing <Task(FileSensor): check_file_exists> on 2020-01-08T00:00:00+00:00
+[2020-01-09 07:27:25,322] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag', 'check_file_exists', '2020-01-08T00:00:00+00:00', '--job_id', '111', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmp_57ifmny']
+[2020-01-09 08:30:23,293] {logging_mixin.py:112} INFO - [2020-01-09 08:30:23,292] {local_task_job.py:124} WARNING - Time since last heartbeat(4.40 s) < heartrate(5.0 s), sleeping for 0.6024219999999998 s
+[2020-01-09 08:30:24,331] {logging_mixin.py:112} INFO - [2020-01-09 08:30:24,329] {local_task_job.py:124} WARNING - Time since last heartbeat(0.15 s) < heartrate(5.0 s), sleeping for 4.846153 s
+[2020-01-09 08:30:26,556] {base_task_runner.py:115} INFO - Job 111: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-09 08:30:26,557] {base_task_runner.py:115} INFO - Job 111: Subtask check_file_exists   FutureWarning
+[2020-01-09 08:30:26,557] {base_task_runner.py:115} INFO - Job 111: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-09 08:30:26,558] {base_task_runner.py:115} INFO - Job 111: Subtask check_file_exists   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-09 08:30:26,559] {base_task_runner.py:115} INFO - Job 111: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-09 08:30:26,560] {base_task_runner.py:115} INFO - Job 111: Subtask check_file_exists   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-09 08:30:26,560] {base_task_runner.py:115} INFO - Job 111: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-09 08:30:26,561] {base_task_runner.py:115} INFO - Job 111: Subtask check_file_exists   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-09 08:30:26,966] {base_task_runner.py:115} INFO - Job 111: Subtask check_file_exists [2020-01-09 08:30:26,966] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=2042
+[2020-01-09 09:46:19,254] {logging_mixin.py:112} INFO - [2020-01-09 09:46:19,254] {local_task_job.py:167} WARNING - State of this instance has been externally set to failed. Taking the poison pill.
+[2020-01-09 09:46:19,383] {helpers.py:308} INFO - Sending Signals.SIGTERM to GPID 2042
+[2020-01-09 09:46:19,442] {helpers.py:286} INFO - Process psutil.Process(pid=2042, status='terminated') (2042) terminated with exit code -15
+[2020-01-09 09:46:19,443] {logging_mixin.py:112} INFO - [2020-01-09 09:46:19,443] {local_task_job.py:124} WARNING - Time since last heartbeat(0.25 s) < heartrate(5.0 s), sleeping for 4.745999 s
+[2020-01-09 09:46:24,193] {logging_mixin.py:112} INFO - [2020-01-09 09:46:24,193] {local_task_job.py:103} INFO - Task exited with return code 0

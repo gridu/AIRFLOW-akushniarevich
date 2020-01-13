@@ -1,0 +1,911 @@
+[2020-01-12 08:00:25,014] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.check_file_exists 2020-01-11T00:00:00+00:00 [queued]>
+[2020-01-12 08:00:25,070] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.check_file_exists 2020-01-11T00:00:00+00:00 [queued]>
+[2020-01-12 08:00:25,072] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-12 08:00:25,072] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-12 08:00:25,072] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-12 08:00:25,120] {taskinstance.py:862} INFO - Executing <Task(FileSensor): check_file_exists> on 2020-01-11T00:00:00+00:00
+[2020-01-12 08:00:25,121] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag', 'check_file_exists', '2020-01-11T00:00:00+00:00', '--job_id', '131', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmpg3wgrgtf']
+[2020-01-12 08:00:26,190] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-12 08:00:26,191] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists   FutureWarning
+[2020-01-12 08:00:26,191] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-12 08:00:26,191] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-12 08:00:26,192] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-12 08:00:26,192] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-12 08:00:26,192] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-12 08:00:26,193] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-12 08:00:26,308] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists [2020-01-12 08:00:26,308] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=8347
+[2020-01-12 08:00:27,092] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists [2020-01-12 08:00:27,092] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-12 08:00:27,093] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists [2020-01-12 08:00:27,092] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-12 08:00:27,289] {base_task_runner.py:115} INFO - Job 131: Subtask check_file_exists [2020-01-12 08:00:27,287] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.check_file_exists 2020-01-11T00:00:00+00:00 [running]> on host cf8b4dbca29e
+[2020-01-12 08:00:27,409] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:00:29,998] {logging_mixin.py:112} INFO - [2020-01-12 08:00:29,998] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958702 s
+[2020-01-12 08:00:35,083] {logging_mixin.py:112} INFO - [2020-01-12 08:00:35,082] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957821 s
+[2020-01-12 08:00:41,494] {logging_mixin.py:112} INFO - [2020-01-12 08:00:41,494] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.933573 s
+[2020-01-12 08:00:46,552] {logging_mixin.py:112} INFO - [2020-01-12 08:00:46,552] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.946901 s
+[2020-01-12 08:00:48,679] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:00:51,636] {logging_mixin.py:112} INFO - [2020-01-12 08:00:51,636] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.946336 s
+[2020-01-12 08:00:56,683] {logging_mixin.py:112} INFO - [2020-01-12 08:00:56,683] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964987 s
+[2020-01-12 08:01:01,795] {logging_mixin.py:112} INFO - [2020-01-12 08:01:01,795] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.939496 s
+[2020-01-12 08:01:06,835] {logging_mixin.py:112} INFO - [2020-01-12 08:01:06,835] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964213 s
+[2020-01-12 08:01:08,693] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:01:12,001] {logging_mixin.py:112} INFO - [2020-01-12 08:01:12,001] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.946545 s
+[2020-01-12 08:01:17,069] {logging_mixin.py:112} INFO - [2020-01-12 08:01:17,069] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.943798 s
+[2020-01-12 08:01:22,118] {logging_mixin.py:112} INFO - [2020-01-12 08:01:22,118] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969454 s
+[2020-01-12 08:01:27,183] {logging_mixin.py:112} INFO - [2020-01-12 08:01:27,183] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966785 s
+[2020-01-12 08:01:28,744] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:01:32,262] {logging_mixin.py:112} INFO - [2020-01-12 08:01:32,262] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967876 s
+[2020-01-12 08:01:37,331] {logging_mixin.py:112} INFO - [2020-01-12 08:01:37,331] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964572 s
+[2020-01-12 08:01:42,508] {logging_mixin.py:112} INFO - [2020-01-12 08:01:42,508] {local_task_job.py:124} WARNING - Time since last heartbeat(0.09 s) < heartrate(5.0 s), sleeping for 4.908341 s
+[2020-01-12 08:01:47,515] {logging_mixin.py:112} INFO - [2020-01-12 08:01:47,515] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970147 s
+[2020-01-12 08:01:48,758] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:01:52,599] {logging_mixin.py:112} INFO - [2020-01-12 08:01:52,599] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962895 s
+[2020-01-12 08:01:57,660] {logging_mixin.py:112} INFO - [2020-01-12 08:01:57,660] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969566 s
+[2020-01-12 08:02:02,749] {logging_mixin.py:112} INFO - [2020-01-12 08:02:02,749] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953107 s
+[2020-01-12 08:02:07,758] {logging_mixin.py:112} INFO - [2020-01-12 08:02:07,758] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969591 s
+[2020-01-12 08:02:08,783] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:02:12,908] {logging_mixin.py:112} INFO - [2020-01-12 08:02:12,908] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948233 s
+[2020-01-12 08:02:17,962] {logging_mixin.py:112} INFO - [2020-01-12 08:02:17,962] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969618 s
+[2020-01-12 08:02:23,037] {logging_mixin.py:112} INFO - [2020-01-12 08:02:23,037] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967454 s
+[2020-01-12 08:02:28,117] {logging_mixin.py:112} INFO - [2020-01-12 08:02:28,116] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967035 s
+[2020-01-12 08:02:28,834] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:02:33,191] {logging_mixin.py:112} INFO - [2020-01-12 08:02:33,191] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971828 s
+[2020-01-12 08:02:38,234] {logging_mixin.py:112} INFO - [2020-01-12 08:02:38,234] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966694 s
+[2020-01-12 08:02:43,310] {logging_mixin.py:112} INFO - [2020-01-12 08:02:43,309] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964085 s
+[2020-01-12 08:02:48,378] {logging_mixin.py:112} INFO - [2020-01-12 08:02:48,378] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967605 s
+[2020-01-12 08:02:48,850] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:02:53,478] {logging_mixin.py:112} INFO - [2020-01-12 08:02:53,477] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956089 s
+[2020-01-12 08:02:58,535] {logging_mixin.py:112} INFO - [2020-01-12 08:02:58,534] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967023 s
+[2020-01-12 08:03:03,605] {logging_mixin.py:112} INFO - [2020-01-12 08:03:03,605] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967957 s
+[2020-01-12 08:03:08,630] {logging_mixin.py:112} INFO - [2020-01-12 08:03:08,630] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972653 s
+[2020-01-12 08:03:08,866] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:03:13,686] {logging_mixin.py:112} INFO - [2020-01-12 08:03:13,686] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972374 s
+[2020-01-12 08:03:18,787] {logging_mixin.py:112} INFO - [2020-01-12 08:03:18,787] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.946598 s
+[2020-01-12 08:03:23,829] {logging_mixin.py:112} INFO - [2020-01-12 08:03:23,829] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963939 s
+[2020-01-12 08:03:28,914] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:03:28,920] {logging_mixin.py:112} INFO - [2020-01-12 08:03:28,919] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948715 s
+[2020-01-12 08:03:33,981] {logging_mixin.py:112} INFO - [2020-01-12 08:03:33,980] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964793 s
+[2020-01-12 08:03:39,000] {logging_mixin.py:112} INFO - [2020-01-12 08:03:39,000] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971172 s
+[2020-01-12 08:03:44,085] {logging_mixin.py:112} INFO - [2020-01-12 08:03:44,085] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958888 s
+[2020-01-12 08:03:48,955] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:03:49,152] {logging_mixin.py:112} INFO - [2020-01-12 08:03:49,152] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960294 s
+[2020-01-12 08:03:54,238] {logging_mixin.py:112} INFO - [2020-01-12 08:03:54,238] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956369 s
+[2020-01-12 08:03:59,291] {logging_mixin.py:112} INFO - [2020-01-12 08:03:59,291] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971013 s
+[2020-01-12 08:04:04,378] {logging_mixin.py:112} INFO - [2020-01-12 08:04:04,378] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958527 s
+[2020-01-12 08:04:08,967] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:04:09,395] {logging_mixin.py:112} INFO - [2020-01-12 08:04:09,395] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969853 s
+[2020-01-12 08:04:14,485] {logging_mixin.py:112} INFO - [2020-01-12 08:04:14,485] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952113 s
+[2020-01-12 08:04:19,541] {logging_mixin.py:112} INFO - [2020-01-12 08:04:19,541] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967913 s
+[2020-01-12 08:04:24,668] {logging_mixin.py:112} INFO - [2020-01-12 08:04:24,668] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.947083 s
+[2020-01-12 08:04:29,012] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:04:29,716] {logging_mixin.py:112} INFO - [2020-01-12 08:04:29,716] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966123 s
+[2020-01-12 08:04:34,780] {logging_mixin.py:112} INFO - [2020-01-12 08:04:34,780] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.973363 s
+[2020-01-12 08:04:39,823] {logging_mixin.py:112} INFO - [2020-01-12 08:04:39,823] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963681 s
+[2020-01-12 08:04:44,919] {logging_mixin.py:112} INFO - [2020-01-12 08:04:44,919] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961388 s
+[2020-01-12 08:04:49,025] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:04:49,977] {logging_mixin.py:112} INFO - [2020-01-12 08:04:49,977] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969332 s
+[2020-01-12 08:04:55,054] {logging_mixin.py:112} INFO - [2020-01-12 08:04:55,053] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959791 s
+[2020-01-12 08:05:00,144] {logging_mixin.py:112} INFO - [2020-01-12 08:05:00,144] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.935509 s
+[2020-01-12 08:05:05,177] {logging_mixin.py:112} INFO - [2020-01-12 08:05:05,177] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961616 s
+[2020-01-12 08:05:09,040] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:05:10,227] {logging_mixin.py:112} INFO - [2020-01-12 08:05:10,227] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961458 s
+[2020-01-12 08:05:15,295] {logging_mixin.py:112} INFO - [2020-01-12 08:05:15,295] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966539 s
+[2020-01-12 08:05:20,370] {logging_mixin.py:112} INFO - [2020-01-12 08:05:20,370] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958668 s
+[2020-01-12 08:05:25,423] {logging_mixin.py:112} INFO - [2020-01-12 08:05:25,423] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968796 s
+[2020-01-12 08:05:29,102] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:05:30,524] {logging_mixin.py:112} INFO - [2020-01-12 08:05:30,524] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953222 s
+[2020-01-12 08:05:35,564] {logging_mixin.py:112} INFO - [2020-01-12 08:05:35,564] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971681 s
+[2020-01-12 08:05:40,626] {logging_mixin.py:112} INFO - [2020-01-12 08:05:40,626] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953353 s
+[2020-01-12 08:05:45,670] {logging_mixin.py:112} INFO - [2020-01-12 08:05:45,670] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970951 s
+[2020-01-12 08:05:49,109] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:05:50,744] {logging_mixin.py:112} INFO - [2020-01-12 08:05:50,744] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964965 s
+[2020-01-12 08:05:55,803] {logging_mixin.py:112} INFO - [2020-01-12 08:05:55,803] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970146 s
+[2020-01-12 08:06:00,872] {logging_mixin.py:112} INFO - [2020-01-12 08:06:00,871] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966216 s
+[2020-01-12 08:06:05,926] {logging_mixin.py:112} INFO - [2020-01-12 08:06:05,926] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972103 s
+[2020-01-12 08:06:09,118] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:06:10,978] {logging_mixin.py:112} INFO - [2020-01-12 08:06:10,978] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964086 s
+[2020-01-12 08:06:16,051] {logging_mixin.py:112} INFO - [2020-01-12 08:06:16,050] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.95025 s
+[2020-01-12 08:06:21,136] {logging_mixin.py:112} INFO - [2020-01-12 08:06:21,136] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.947759 s
+[2020-01-12 08:06:26,288] {logging_mixin.py:112} INFO - [2020-01-12 08:06:26,288] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.931421 s
+[2020-01-12 08:06:29,183] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:06:31,391] {logging_mixin.py:112} INFO - [2020-01-12 08:06:31,391] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.939871 s
+[2020-01-12 08:06:36,419] {logging_mixin.py:112} INFO - [2020-01-12 08:06:36,419] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970277 s
+[2020-01-12 08:06:41,465] {logging_mixin.py:112} INFO - [2020-01-12 08:06:41,465] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962333 s
+[2020-01-12 08:06:46,513] {logging_mixin.py:112} INFO - [2020-01-12 08:06:46,513] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969925 s
+[2020-01-12 08:06:49,204] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:06:51,605] {logging_mixin.py:112} INFO - [2020-01-12 08:06:51,605] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957473 s
+[2020-01-12 08:06:56,675] {logging_mixin.py:112} INFO - [2020-01-12 08:06:56,675] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966948 s
+[2020-01-12 08:07:01,752] {logging_mixin.py:112} INFO - [2020-01-12 08:07:01,752] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963017 s
+[2020-01-12 08:07:06,818] {logging_mixin.py:112} INFO - [2020-01-12 08:07:06,817] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965558 s
+[2020-01-12 08:07:09,212] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:07:11,847] {logging_mixin.py:112} INFO - [2020-01-12 08:07:11,846] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963923 s
+[2020-01-12 08:07:16,904] {logging_mixin.py:112} INFO - [2020-01-12 08:07:16,904] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967906 s
+[2020-01-12 08:07:22,010] {logging_mixin.py:112} INFO - [2020-01-12 08:07:22,010] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.942128 s
+[2020-01-12 08:07:27,050] {logging_mixin.py:112} INFO - [2020-01-12 08:07:27,050] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963488 s
+[2020-01-12 08:07:29,264] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:07:32,123] {logging_mixin.py:112} INFO - [2020-01-12 08:07:32,123] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953024 s
+[2020-01-12 08:07:37,193] {logging_mixin.py:112} INFO - [2020-01-12 08:07:37,193] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.946717 s
+[2020-01-12 08:07:42,255] {logging_mixin.py:112} INFO - [2020-01-12 08:07:42,255] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965056 s
+[2020-01-12 08:07:47,356] {logging_mixin.py:112} INFO - [2020-01-12 08:07:47,356] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952539 s
+[2020-01-12 08:07:49,284] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:07:52,417] {logging_mixin.py:112} INFO - [2020-01-12 08:07:52,417] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964189 s
+[2020-01-12 08:07:57,491] {logging_mixin.py:112} INFO - [2020-01-12 08:07:57,491] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965953 s
+[2020-01-12 08:08:02,570] {logging_mixin.py:112} INFO - [2020-01-12 08:08:02,569] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968279 s
+[2020-01-12 08:08:07,762] {logging_mixin.py:112} INFO - [2020-01-12 08:08:07,762] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.943404 s
+[2020-01-12 08:08:09,434] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:08:12,828] {logging_mixin.py:112} INFO - [2020-01-12 08:08:12,828] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959291 s
+[2020-01-12 08:08:17,914] {logging_mixin.py:112} INFO - [2020-01-12 08:08:17,914] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955868 s
+[2020-01-12 08:08:23,003] {logging_mixin.py:112} INFO - [2020-01-12 08:08:23,003] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952825 s
+[2020-01-12 08:08:28,115] {logging_mixin.py:112} INFO - [2020-01-12 08:08:28,115] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.93454 s
+[2020-01-12 08:08:29,480] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:08:33,168] {logging_mixin.py:112} INFO - [2020-01-12 08:08:33,168] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955319 s
+[2020-01-12 08:08:38,231] {logging_mixin.py:112} INFO - [2020-01-12 08:08:38,231] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959804 s
+[2020-01-12 08:08:43,291] {logging_mixin.py:112} INFO - [2020-01-12 08:08:43,291] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.973117 s
+[2020-01-12 08:08:48,360] {logging_mixin.py:112} INFO - [2020-01-12 08:08:48,360] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972557 s
+[2020-01-12 08:08:49,501] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:08:53,423] {logging_mixin.py:112} INFO - [2020-01-12 08:08:53,423] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972885 s
+[2020-01-12 08:08:58,500] {logging_mixin.py:112} INFO - [2020-01-12 08:08:58,499] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964121 s
+[2020-01-12 08:09:03,552] {logging_mixin.py:112} INFO - [2020-01-12 08:09:03,552] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.973747 s
+[2020-01-12 08:09:08,597] {logging_mixin.py:112} INFO - [2020-01-12 08:09:08,597] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.9611 s
+[2020-01-12 08:09:09,513] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:09:13,678] {logging_mixin.py:112} INFO - [2020-01-12 08:09:13,678] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963328 s
+[2020-01-12 08:09:18,778] {logging_mixin.py:112} INFO - [2020-01-12 08:09:18,777] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950497 s
+[2020-01-12 08:09:23,830] {logging_mixin.py:112} INFO - [2020-01-12 08:09:23,830] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.96431 s
+[2020-01-12 08:09:28,878] {logging_mixin.py:112} INFO - [2020-01-12 08:09:28,878] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970024 s
+[2020-01-12 08:09:29,557] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:09:33,944] {logging_mixin.py:112} INFO - [2020-01-12 08:09:33,944] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972111 s
+[2020-01-12 08:09:38,979] {logging_mixin.py:112} INFO - [2020-01-12 08:09:38,979] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970488 s
+[2020-01-12 08:09:44,084] {logging_mixin.py:112} INFO - [2020-01-12 08:09:44,084] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950594 s
+[2020-01-12 08:09:49,175] {logging_mixin.py:112} INFO - [2020-01-12 08:09:49,175] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965343 s
+[2020-01-12 08:09:49,572] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:09:54,297] {logging_mixin.py:112} INFO - [2020-01-12 08:09:54,297] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.943732 s
+[2020-01-12 08:09:59,375] {logging_mixin.py:112} INFO - [2020-01-12 08:09:59,374] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948373 s
+[2020-01-12 08:10:04,432] {logging_mixin.py:112} INFO - [2020-01-12 08:10:04,432] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968907 s
+[2020-01-12 08:10:09,482] {logging_mixin.py:112} INFO - [2020-01-12 08:10:09,481] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948944 s
+[2020-01-12 08:10:09,589] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:10:14,553] {logging_mixin.py:112} INFO - [2020-01-12 08:10:14,553] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953112 s
+[2020-01-12 08:10:19,639] {logging_mixin.py:112} INFO - [2020-01-12 08:10:19,639] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.933513 s
+[2020-01-12 08:10:24,664] {logging_mixin.py:112} INFO - [2020-01-12 08:10:24,664] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969508 s
+[2020-01-12 08:10:29,638] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:10:29,759] {logging_mixin.py:112} INFO - [2020-01-12 08:10:29,759] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955145 s
+[2020-01-12 08:10:34,816] {logging_mixin.py:112} INFO - [2020-01-12 08:10:34,816] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965415 s
+[2020-01-12 08:10:39,850] {logging_mixin.py:112} INFO - [2020-01-12 08:10:39,850] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963464 s
+[2020-01-12 08:10:44,953] {logging_mixin.py:112} INFO - [2020-01-12 08:10:44,953] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.947125 s
+[2020-01-12 08:10:49,658] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:10:50,009] {logging_mixin.py:112} INFO - [2020-01-12 08:10:50,009] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960386 s
+[2020-01-12 08:10:55,073] {logging_mixin.py:112} INFO - [2020-01-12 08:10:55,073] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970876 s
+[2020-01-12 08:11:00,183] {logging_mixin.py:112} INFO - [2020-01-12 08:11:00,183] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.94255 s
+[2020-01-12 08:11:05,221] {logging_mixin.py:112} INFO - [2020-01-12 08:11:05,221] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966774 s
+[2020-01-12 08:11:09,677] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:11:10,261] {logging_mixin.py:112} INFO - [2020-01-12 08:11:10,261] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970469 s
+[2020-01-12 08:11:15,353] {logging_mixin.py:112} INFO - [2020-01-12 08:11:15,352] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969279 s
+[2020-01-12 08:11:20,451] {logging_mixin.py:112} INFO - [2020-01-12 08:11:20,451] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958756 s
+[2020-01-12 08:11:25,504] {logging_mixin.py:112} INFO - [2020-01-12 08:11:25,504] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970102 s
+[2020-01-12 08:11:29,727] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:11:30,590] {logging_mixin.py:112} INFO - [2020-01-12 08:11:30,590] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961677 s
+[2020-01-12 08:11:35,645] {logging_mixin.py:112} INFO - [2020-01-12 08:11:35,645] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967728 s
+[2020-01-12 08:11:40,684] {logging_mixin.py:112} INFO - [2020-01-12 08:11:40,684] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967954 s
+[2020-01-12 08:11:45,783] {logging_mixin.py:112} INFO - [2020-01-12 08:11:45,783] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953875 s
+[2020-01-12 08:11:49,737] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:11:50,842] {logging_mixin.py:112} INFO - [2020-01-12 08:11:50,842] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962999 s
+[2020-01-12 08:11:55,934] {logging_mixin.py:112} INFO - [2020-01-12 08:11:55,934] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962747 s
+[2020-01-12 08:12:01,014] {logging_mixin.py:112} INFO - [2020-01-12 08:12:01,014] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964629 s
+[2020-01-12 08:12:06,067] {logging_mixin.py:112} INFO - [2020-01-12 08:12:06,067] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970916 s
+[2020-01-12 08:12:09,758] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:12:11,136] {logging_mixin.py:112} INFO - [2020-01-12 08:12:11,136] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957818 s
+[2020-01-12 08:12:16,200] {logging_mixin.py:112} INFO - [2020-01-12 08:12:16,200] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961068 s
+[2020-01-12 08:12:21,278] {logging_mixin.py:112} INFO - [2020-01-12 08:12:21,278] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963417 s
+[2020-01-12 08:12:26,338] {logging_mixin.py:112} INFO - [2020-01-12 08:12:26,338] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968739 s
+[2020-01-12 08:12:29,800] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:12:31,467] {logging_mixin.py:112} INFO - [2020-01-12 08:12:31,467] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958343 s
+[2020-01-12 08:12:36,536] {logging_mixin.py:112} INFO - [2020-01-12 08:12:36,536] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962384 s
+[2020-01-12 08:12:41,595] {logging_mixin.py:112} INFO - [2020-01-12 08:12:41,595] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958626 s
+[2020-01-12 08:12:46,661] {logging_mixin.py:112} INFO - [2020-01-12 08:12:46,660] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.97283 s
+[2020-01-12 08:12:49,807] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:12:51,748] {logging_mixin.py:112} INFO - [2020-01-12 08:12:51,748] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.96181 s
+[2020-01-12 08:12:56,800] {logging_mixin.py:112} INFO - [2020-01-12 08:12:56,800] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970821 s
+[2020-01-12 08:13:01,919] {logging_mixin.py:112} INFO - [2020-01-12 08:13:01,918] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.938538 s
+[2020-01-12 08:13:06,914] {logging_mixin.py:112} INFO - [2020-01-12 08:13:06,914] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971482 s
+[2020-01-12 08:13:09,810] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:13:12,003] {logging_mixin.py:112} INFO - [2020-01-12 08:13:12,003] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962888 s
+[2020-01-12 08:13:17,062] {logging_mixin.py:112} INFO - [2020-01-12 08:13:17,062] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967609 s
+[2020-01-12 08:13:22,140] {logging_mixin.py:112} INFO - [2020-01-12 08:13:22,140] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961449 s
+[2020-01-12 08:13:27,214] {logging_mixin.py:112} INFO - [2020-01-12 08:13:27,214] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969122 s
+[2020-01-12 08:13:29,855] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:13:32,301] {logging_mixin.py:112} INFO - [2020-01-12 08:13:32,301] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.95637 s
+[2020-01-12 08:13:37,317] {logging_mixin.py:112} INFO - [2020-01-12 08:13:37,317] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966384 s
+[2020-01-12 08:13:42,401] {logging_mixin.py:112} INFO - [2020-01-12 08:13:42,401] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957489 s
+[2020-01-12 08:13:47,467] {logging_mixin.py:112} INFO - [2020-01-12 08:13:47,467] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967018 s
+[2020-01-12 08:13:49,857] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:13:52,574] {logging_mixin.py:112} INFO - [2020-01-12 08:13:52,574] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952004 s
+[2020-01-12 08:13:57,742] {logging_mixin.py:112} INFO - [2020-01-12 08:13:57,742] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956619 s
+[2020-01-12 08:14:02,812] {logging_mixin.py:112} INFO - [2020-01-12 08:14:02,812] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954076 s
+[2020-01-12 08:14:07,824] {logging_mixin.py:112} INFO - [2020-01-12 08:14:07,823] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969957 s
+[2020-01-12 08:14:09,871] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:14:12,906] {logging_mixin.py:112} INFO - [2020-01-12 08:14:12,906] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948537 s
+[2020-01-12 08:14:17,952] {logging_mixin.py:112} INFO - [2020-01-12 08:14:17,952] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964344 s
+[2020-01-12 08:14:23,045] {logging_mixin.py:112} INFO - [2020-01-12 08:14:23,045] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953161 s
+[2020-01-12 08:14:28,087] {logging_mixin.py:112} INFO - [2020-01-12 08:14:28,087] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969272 s
+[2020-01-12 08:14:29,929] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:14:33,216] {logging_mixin.py:112} INFO - [2020-01-12 08:14:33,215] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944551 s
+[2020-01-12 08:14:38,232] {logging_mixin.py:112} INFO - [2020-01-12 08:14:38,232] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966283 s
+[2020-01-12 08:14:43,307] {logging_mixin.py:112} INFO - [2020-01-12 08:14:43,307] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962657 s
+[2020-01-12 08:14:48,371] {logging_mixin.py:112} INFO - [2020-01-12 08:14:48,370] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969527 s
+[2020-01-12 08:14:49,954] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:14:53,445] {logging_mixin.py:112} INFO - [2020-01-12 08:14:53,445] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963722 s
+[2020-01-12 08:14:58,517] {logging_mixin.py:112} INFO - [2020-01-12 08:14:58,517] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954972 s
+[2020-01-12 08:15:03,576] {logging_mixin.py:112} INFO - [2020-01-12 08:15:03,575] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962401 s
+[2020-01-12 08:15:08,597] {logging_mixin.py:112} INFO - [2020-01-12 08:15:08,596] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.97213 s
+[2020-01-12 08:15:09,976] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:15:13,694] {logging_mixin.py:112} INFO - [2020-01-12 08:15:13,694] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955089 s
+[2020-01-12 08:15:18,764] {logging_mixin.py:112} INFO - [2020-01-12 08:15:18,764] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96739 s
+[2020-01-12 08:15:23,848] {logging_mixin.py:112} INFO - [2020-01-12 08:15:23,848] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956474 s
+[2020-01-12 08:15:28,938] {logging_mixin.py:112} INFO - [2020-01-12 08:15:28,938] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.949733 s
+[2020-01-12 08:15:30,272] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:15:33,989] {logging_mixin.py:112} INFO - [2020-01-12 08:15:33,989] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968568 s
+[2020-01-12 08:15:39,017] {logging_mixin.py:112} INFO - [2020-01-12 08:15:39,017] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969959 s
+[2020-01-12 08:15:44,104] {logging_mixin.py:112} INFO - [2020-01-12 08:15:44,104] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965604 s
+[2020-01-12 08:15:49,179] {logging_mixin.py:112} INFO - [2020-01-12 08:15:49,179] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.95404 s
+[2020-01-12 08:15:50,293] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:15:54,245] {logging_mixin.py:112} INFO - [2020-01-12 08:15:54,244] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958437 s
+[2020-01-12 08:15:59,316] {logging_mixin.py:112} INFO - [2020-01-12 08:15:59,316] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958578 s
+[2020-01-12 08:16:04,376] {logging_mixin.py:112} INFO - [2020-01-12 08:16:04,375] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963898 s
+[2020-01-12 08:16:09,398] {logging_mixin.py:112} INFO - [2020-01-12 08:16:09,398] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972933 s
+[2020-01-12 08:16:10,296] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:16:14,472] {logging_mixin.py:112} INFO - [2020-01-12 08:16:14,472] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.96468 s
+[2020-01-12 08:16:19,554] {logging_mixin.py:112} INFO - [2020-01-12 08:16:19,554] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970535 s
+[2020-01-12 08:16:24,618] {logging_mixin.py:112} INFO - [2020-01-12 08:16:24,618] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971805 s
+[2020-01-12 08:16:29,701] {logging_mixin.py:112} INFO - [2020-01-12 08:16:29,701] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965752 s
+[2020-01-12 08:16:30,382] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:16:34,775] {logging_mixin.py:112} INFO - [2020-01-12 08:16:34,775] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966453 s
+[2020-01-12 08:16:39,801] {logging_mixin.py:112} INFO - [2020-01-12 08:16:39,801] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970529 s
+[2020-01-12 08:16:44,892] {logging_mixin.py:112} INFO - [2020-01-12 08:16:44,891] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.945551 s
+[2020-01-12 08:16:49,925] {logging_mixin.py:112} INFO - [2020-01-12 08:16:49,925] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96937 s
+[2020-01-12 08:16:50,393] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:16:55,041] {logging_mixin.py:112} INFO - [2020-01-12 08:16:55,041] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953238 s
+[2020-01-12 08:17:00,086] {logging_mixin.py:112} INFO - [2020-01-12 08:17:00,086] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970951 s
+[2020-01-12 08:17:05,141] {logging_mixin.py:112} INFO - [2020-01-12 08:17:05,141] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969163 s
+[2020-01-12 08:17:10,193] {logging_mixin.py:112} INFO - [2020-01-12 08:17:10,193] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963369 s
+[2020-01-12 08:17:10,391] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:17:15,275] {logging_mixin.py:112} INFO - [2020-01-12 08:17:15,275] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951151 s
+[2020-01-12 08:17:20,341] {logging_mixin.py:112} INFO - [2020-01-12 08:17:20,341] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956114 s
+[2020-01-12 08:17:25,386] {logging_mixin.py:112} INFO - [2020-01-12 08:17:25,386] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.973128 s
+[2020-01-12 08:17:30,437] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:17:30,478] {logging_mixin.py:112} INFO - [2020-01-12 08:17:30,478] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967399 s
+[2020-01-12 08:17:35,541] {logging_mixin.py:112} INFO - [2020-01-12 08:17:35,541] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970688 s
+[2020-01-12 08:17:40,571] {logging_mixin.py:112} INFO - [2020-01-12 08:17:40,571] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971618 s
+[2020-01-12 08:17:45,640] {logging_mixin.py:112} INFO - [2020-01-12 08:17:45,640] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971072 s
+[2020-01-12 08:17:50,450] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:17:50,734] {logging_mixin.py:112} INFO - [2020-01-12 08:17:50,734] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955061 s
+[2020-01-12 08:17:55,784] {logging_mixin.py:112} INFO - [2020-01-12 08:17:55,784] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968942 s
+[2020-01-12 08:18:00,928] {logging_mixin.py:112} INFO - [2020-01-12 08:18:00,927] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962076 s
+[2020-01-12 08:18:05,987] {logging_mixin.py:112} INFO - [2020-01-12 08:18:05,987] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969609 s
+[2020-01-12 08:18:10,481] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:18:11,069] {logging_mixin.py:112} INFO - [2020-01-12 08:18:11,068] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944487 s
+[2020-01-12 08:18:16,105] {logging_mixin.py:112} INFO - [2020-01-12 08:18:16,105] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971793 s
+[2020-01-12 08:18:21,181] {logging_mixin.py:112} INFO - [2020-01-12 08:18:21,181] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968086 s
+[2020-01-12 08:18:26,256] {logging_mixin.py:112} INFO - [2020-01-12 08:18:26,256] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970571 s
+[2020-01-12 08:18:30,530] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:18:31,349] {logging_mixin.py:112} INFO - [2020-01-12 08:18:31,348] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.95898 s
+[2020-01-12 08:18:36,396] {logging_mixin.py:112} INFO - [2020-01-12 08:18:36,395] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96983 s
+[2020-01-12 08:18:41,447] {logging_mixin.py:112} INFO - [2020-01-12 08:18:41,447] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958861 s
+[2020-01-12 08:18:46,550] {logging_mixin.py:112} INFO - [2020-01-12 08:18:46,550] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950205 s
+[2020-01-12 08:18:50,535] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:18:51,610] {logging_mixin.py:112} INFO - [2020-01-12 08:18:51,609] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963658 s
+[2020-01-12 08:18:56,660] {logging_mixin.py:112} INFO - [2020-01-12 08:18:56,660] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971826 s
+[2020-01-12 08:19:01,777] {logging_mixin.py:112} INFO - [2020-01-12 08:19:01,777] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956191 s
+[2020-01-12 08:19:06,796] {logging_mixin.py:112} INFO - [2020-01-12 08:19:06,796] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968807 s
+[2020-01-12 08:19:10,542] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:19:11,867] {logging_mixin.py:112} INFO - [2020-01-12 08:19:11,867] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968452 s
+[2020-01-12 08:19:16,930] {logging_mixin.py:112} INFO - [2020-01-12 08:19:16,930] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968932 s
+[2020-01-12 08:19:22,009] {logging_mixin.py:112} INFO - [2020-01-12 08:19:22,009] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968028 s
+[2020-01-12 08:19:27,069] {logging_mixin.py:112} INFO - [2020-01-12 08:19:27,068] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965645 s
+[2020-01-12 08:19:30,592] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:19:32,145] {logging_mixin.py:112} INFO - [2020-01-12 08:19:32,145] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.96255 s
+[2020-01-12 08:19:37,208] {logging_mixin.py:112} INFO - [2020-01-12 08:19:37,208] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950984 s
+[2020-01-12 08:19:42,258] {logging_mixin.py:112} INFO - [2020-01-12 08:19:42,258] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966234 s
+[2020-01-12 08:19:47,475] {logging_mixin.py:112} INFO - [2020-01-12 08:19:47,475] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948572 s
+[2020-01-12 08:19:50,604] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:19:52,548] {logging_mixin.py:112} INFO - [2020-01-12 08:19:52,547] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951167 s
+[2020-01-12 08:19:57,594] {logging_mixin.py:112} INFO - [2020-01-12 08:19:57,594] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969594 s
+[2020-01-12 08:20:02,697] {logging_mixin.py:112} INFO - [2020-01-12 08:20:02,697] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951482 s
+[2020-01-12 08:20:07,703] {logging_mixin.py:112} INFO - [2020-01-12 08:20:07,703] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971789 s
+[2020-01-12 08:20:10,616] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:20:12,807] {logging_mixin.py:112} INFO - [2020-01-12 08:20:12,807] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960502 s
+[2020-01-12 08:20:17,891] {logging_mixin.py:112} INFO - [2020-01-12 08:20:17,891] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953789 s
+[2020-01-12 08:20:22,944] {logging_mixin.py:112} INFO - [2020-01-12 08:20:22,943] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967759 s
+[2020-01-12 08:20:28,017] {logging_mixin.py:112} INFO - [2020-01-12 08:20:28,017] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965408 s
+[2020-01-12 08:20:30,651] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:20:33,103] {logging_mixin.py:112} INFO - [2020-01-12 08:20:33,103] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956918 s
+[2020-01-12 08:20:38,115] {logging_mixin.py:112} INFO - [2020-01-12 08:20:38,114] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969036 s
+[2020-01-12 08:20:43,177] {logging_mixin.py:112} INFO - [2020-01-12 08:20:43,177] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963123 s
+[2020-01-12 08:20:48,267] {logging_mixin.py:112} INFO - [2020-01-12 08:20:48,267] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964574 s
+[2020-01-12 08:20:50,668] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:20:53,346] {logging_mixin.py:112} INFO - [2020-01-12 08:20:53,346] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954942 s
+[2020-01-12 08:20:58,393] {logging_mixin.py:112} INFO - [2020-01-12 08:20:58,393] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.97134 s
+[2020-01-12 08:21:03,487] {logging_mixin.py:112} INFO - [2020-01-12 08:21:03,487] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958991 s
+[2020-01-12 08:21:08,537] {logging_mixin.py:112} INFO - [2020-01-12 08:21:08,537] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.947466 s
+[2020-01-12 08:21:10,684] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:21:13,630] {logging_mixin.py:112} INFO - [2020-01-12 08:21:13,630] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951414 s
+[2020-01-12 08:21:18,696] {logging_mixin.py:112} INFO - [2020-01-12 08:21:18,696] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964598 s
+[2020-01-12 08:21:23,780] {logging_mixin.py:112} INFO - [2020-01-12 08:21:23,780] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958255 s
+[2020-01-12 08:21:28,832] {logging_mixin.py:112} INFO - [2020-01-12 08:21:28,832] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966941 s
+[2020-01-12 08:21:30,737] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:21:33,900] {logging_mixin.py:112} INFO - [2020-01-12 08:21:33,899] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960443 s
+[2020-01-12 08:21:38,933] {logging_mixin.py:112} INFO - [2020-01-12 08:21:38,933] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962587 s
+[2020-01-12 08:21:44,009] {logging_mixin.py:112} INFO - [2020-01-12 08:21:44,009] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956381 s
+[2020-01-12 08:21:49,052] {logging_mixin.py:112} INFO - [2020-01-12 08:21:49,052] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968877 s
+[2020-01-12 08:21:50,747] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:21:54,149] {logging_mixin.py:112} INFO - [2020-01-12 08:21:54,149] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.95449 s
+[2020-01-12 08:21:59,228] {logging_mixin.py:112} INFO - [2020-01-12 08:21:59,227] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951246 s
+[2020-01-12 08:22:04,290] {logging_mixin.py:112} INFO - [2020-01-12 08:22:04,290] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957019 s
+[2020-01-12 08:22:09,318] {logging_mixin.py:112} INFO - [2020-01-12 08:22:09,318] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963958 s
+[2020-01-12 08:22:10,767] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:22:14,382] {logging_mixin.py:112} INFO - [2020-01-12 08:22:14,382] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965874 s
+[2020-01-12 08:22:19,460] {logging_mixin.py:112} INFO - [2020-01-12 08:22:19,460] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961831 s
+[2020-01-12 08:22:24,532] {logging_mixin.py:112} INFO - [2020-01-12 08:22:24,532] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961531 s
+[2020-01-12 08:22:29,639] {logging_mixin.py:112} INFO - [2020-01-12 08:22:29,639] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.927181 s
+[2020-01-12 08:22:30,804] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:22:34,695] {logging_mixin.py:112} INFO - [2020-01-12 08:22:34,694] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962481 s
+[2020-01-12 08:22:39,722] {logging_mixin.py:112} INFO - [2020-01-12 08:22:39,722] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971762 s
+[2020-01-12 08:22:44,794] {logging_mixin.py:112} INFO - [2020-01-12 08:22:44,794] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966203 s
+[2020-01-12 08:22:49,857] {logging_mixin.py:112} INFO - [2020-01-12 08:22:49,857] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96879 s
+[2020-01-12 08:22:50,815] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:22:54,950] {logging_mixin.py:112} INFO - [2020-01-12 08:22:54,950] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.95512 s
+[2020-01-12 08:23:00,055] {logging_mixin.py:112} INFO - [2020-01-12 08:23:00,054] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959707 s
+[2020-01-12 08:23:05,136] {logging_mixin.py:112} INFO - [2020-01-12 08:23:05,136] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.95864 s
+[2020-01-12 08:23:10,159] {logging_mixin.py:112} INFO - [2020-01-12 08:23:10,159] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972955 s
+[2020-01-12 08:23:10,845] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:23:15,257] {logging_mixin.py:112} INFO - [2020-01-12 08:23:15,256] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956001 s
+[2020-01-12 08:23:20,303] {logging_mixin.py:112} INFO - [2020-01-12 08:23:20,303] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967469 s
+[2020-01-12 08:23:25,397] {logging_mixin.py:112} INFO - [2020-01-12 08:23:25,396] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.947538 s
+[2020-01-12 08:23:30,437] {logging_mixin.py:112} INFO - [2020-01-12 08:23:30,437] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.97141 s
+[2020-01-12 08:23:30,897] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:23:35,526] {logging_mixin.py:112} INFO - [2020-01-12 08:23:35,526] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.95733 s
+[2020-01-12 08:23:40,544] {logging_mixin.py:112} INFO - [2020-01-12 08:23:40,544] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967654 s
+[2020-01-12 08:23:45,653] {logging_mixin.py:112} INFO - [2020-01-12 08:23:45,653] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950012 s
+[2020-01-12 08:23:50,719] {logging_mixin.py:112} INFO - [2020-01-12 08:23:50,719] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966088 s
+[2020-01-12 08:23:50,914] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:23:55,793] {logging_mixin.py:112} INFO - [2020-01-12 08:23:55,793] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965874 s
+[2020-01-12 08:24:00,895] {logging_mixin.py:112} INFO - [2020-01-12 08:24:00,895] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.937837 s
+[2020-01-12 08:24:05,944] {logging_mixin.py:112} INFO - [2020-01-12 08:24:05,944] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959944 s
+[2020-01-12 08:24:10,933] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:24:10,977] {logging_mixin.py:112} INFO - [2020-01-12 08:24:10,977] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972996 s
+[2020-01-12 08:24:16,056] {logging_mixin.py:112} INFO - [2020-01-12 08:24:16,056] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964693 s
+[2020-01-12 08:24:21,140] {logging_mixin.py:112} INFO - [2020-01-12 08:24:21,140] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962784 s
+[2020-01-12 08:24:26,213] {logging_mixin.py:112} INFO - [2020-01-12 08:24:26,212] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961405 s
+[2020-01-12 08:24:30,988] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:24:31,304] {logging_mixin.py:112} INFO - [2020-01-12 08:24:31,303] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954543 s
+[2020-01-12 08:24:36,350] {logging_mixin.py:112} INFO - [2020-01-12 08:24:36,350] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963905 s
+[2020-01-12 08:24:41,435] {logging_mixin.py:112} INFO - [2020-01-12 08:24:41,435] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962696 s
+[2020-01-12 08:24:46,515] {logging_mixin.py:112} INFO - [2020-01-12 08:24:46,515] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959754 s
+[2020-01-12 08:24:51,008] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:24:51,619] {logging_mixin.py:112} INFO - [2020-01-12 08:24:51,619] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.941214 s
+[2020-01-12 08:24:56,696] {logging_mixin.py:112} INFO - [2020-01-12 08:24:56,696] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.95281 s
+[2020-01-12 08:25:01,756] {logging_mixin.py:112} INFO - [2020-01-12 08:25:01,756] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969825 s
+[2020-01-12 08:25:06,812] {logging_mixin.py:112} INFO - [2020-01-12 08:25:06,812] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960977 s
+[2020-01-12 08:25:11,018] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:25:11,890] {logging_mixin.py:112} INFO - [2020-01-12 08:25:11,889] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960973 s
+[2020-01-12 08:25:16,951] {logging_mixin.py:112} INFO - [2020-01-12 08:25:16,951] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965489 s
+[2020-01-12 08:25:22,042] {logging_mixin.py:112} INFO - [2020-01-12 08:25:22,042] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.95665 s
+[2020-01-12 08:25:27,135] {logging_mixin.py:112} INFO - [2020-01-12 08:25:27,135] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950478 s
+[2020-01-12 08:25:31,058] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:25:32,180] {logging_mixin.py:112} INFO - [2020-01-12 08:25:32,180] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972269 s
+[2020-01-12 08:25:37,247] {logging_mixin.py:112} INFO - [2020-01-12 08:25:37,247] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950078 s
+[2020-01-12 08:25:42,329] {logging_mixin.py:112} INFO - [2020-01-12 08:25:42,329] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958264 s
+[2020-01-12 08:25:47,400] {logging_mixin.py:112} INFO - [2020-01-12 08:25:47,400] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962577 s
+[2020-01-12 08:25:51,062] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:25:52,481] {logging_mixin.py:112} INFO - [2020-01-12 08:25:52,481] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957347 s
+[2020-01-12 08:25:57,554] {logging_mixin.py:112} INFO - [2020-01-12 08:25:57,554] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960513 s
+[2020-01-12 08:26:02,632] {logging_mixin.py:112} INFO - [2020-01-12 08:26:02,631] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956577 s
+[2020-01-12 08:26:07,676] {logging_mixin.py:112} INFO - [2020-01-12 08:26:07,676] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954226 s
+[2020-01-12 08:26:11,085] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:26:12,753] {logging_mixin.py:112} INFO - [2020-01-12 08:26:12,753] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951871 s
+[2020-01-12 08:26:17,821] {logging_mixin.py:112} INFO - [2020-01-12 08:26:17,821] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952483 s
+[2020-01-12 08:26:22,888] {logging_mixin.py:112} INFO - [2020-01-12 08:26:22,888] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972543 s
+[2020-01-12 08:26:27,979] {logging_mixin.py:112} INFO - [2020-01-12 08:26:27,979] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958203 s
+[2020-01-12 08:26:31,131] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:26:33,119] {logging_mixin.py:112} INFO - [2020-01-12 08:26:33,119] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964415 s
+[2020-01-12 08:26:38,154] {logging_mixin.py:112} INFO - [2020-01-12 08:26:38,154] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963115 s
+[2020-01-12 08:26:43,206] {logging_mixin.py:112} INFO - [2020-01-12 08:26:43,206] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972207 s
+[2020-01-12 08:26:48,329] {logging_mixin.py:112} INFO - [2020-01-12 08:26:48,329] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.95009 s
+[2020-01-12 08:26:51,138] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:26:53,381] {logging_mixin.py:112} INFO - [2020-01-12 08:26:53,381] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967861 s
+[2020-01-12 08:26:58,493] {logging_mixin.py:112} INFO - [2020-01-12 08:26:58,493] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957421 s
+[2020-01-12 08:27:03,542] {logging_mixin.py:112} INFO - [2020-01-12 08:27:03,542] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969554 s
+[2020-01-12 08:27:08,597] {logging_mixin.py:112} INFO - [2020-01-12 08:27:08,597] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964257 s
+[2020-01-12 08:27:11,151] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:27:13,666] {logging_mixin.py:112} INFO - [2020-01-12 08:27:13,666] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964637 s
+[2020-01-12 08:27:18,855] {logging_mixin.py:112} INFO - [2020-01-12 08:27:18,855] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.933152 s
+[2020-01-12 08:27:23,898] {logging_mixin.py:112} INFO - [2020-01-12 08:27:23,898] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962557 s
+[2020-01-12 08:27:28,985] {logging_mixin.py:112} INFO - [2020-01-12 08:27:28,985] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955363 s
+[2020-01-12 08:27:31,197] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:27:34,084] {logging_mixin.py:112} INFO - [2020-01-12 08:27:34,083] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956629 s
+[2020-01-12 08:27:39,175] {logging_mixin.py:112} INFO - [2020-01-12 08:27:39,175] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944217 s
+[2020-01-12 08:27:44,238] {logging_mixin.py:112} INFO - [2020-01-12 08:27:44,238] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.947003 s
+[2020-01-12 08:27:49,343] {logging_mixin.py:112} INFO - [2020-01-12 08:27:49,343] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.94017 s
+[2020-01-12 08:27:51,205] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:27:54,386] {logging_mixin.py:112} INFO - [2020-01-12 08:27:54,386] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968799 s
+[2020-01-12 08:27:59,453] {logging_mixin.py:112} INFO - [2020-01-12 08:27:59,453] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970124 s
+[2020-01-12 08:28:04,506] {logging_mixin.py:112} INFO - [2020-01-12 08:28:04,506] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971447 s
+[2020-01-12 08:28:09,599] {logging_mixin.py:112} INFO - [2020-01-12 08:28:09,599] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.934204 s
+[2020-01-12 08:28:11,224] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:28:14,627] {logging_mixin.py:112} INFO - [2020-01-12 08:28:14,626] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970706 s
+[2020-01-12 08:28:19,758] {logging_mixin.py:112} INFO - [2020-01-12 08:28:19,758] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952372 s
+[2020-01-12 08:28:24,815] {logging_mixin.py:112} INFO - [2020-01-12 08:28:24,815] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963365 s
+[2020-01-12 08:28:29,886] {logging_mixin.py:112} INFO - [2020-01-12 08:28:29,886] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958543 s
+[2020-01-12 08:28:31,273] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:28:34,933] {logging_mixin.py:112} INFO - [2020-01-12 08:28:34,933] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971417 s
+[2020-01-12 08:28:39,988] {logging_mixin.py:112} INFO - [2020-01-12 08:28:39,988] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961077 s
+[2020-01-12 08:28:45,047] {logging_mixin.py:112} INFO - [2020-01-12 08:28:45,047] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971936 s
+[2020-01-12 08:28:50,212] {logging_mixin.py:112} INFO - [2020-01-12 08:28:50,212] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.930294 s
+[2020-01-12 08:28:51,304] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:28:55,278] {logging_mixin.py:112} INFO - [2020-01-12 08:28:55,278] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955116 s
+[2020-01-12 08:29:00,329] {logging_mixin.py:112} INFO - [2020-01-12 08:29:00,329] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970535 s
+[2020-01-12 08:29:05,399] {logging_mixin.py:112} INFO - [2020-01-12 08:29:05,399] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969329 s
+[2020-01-12 08:29:10,425] {logging_mixin.py:112} INFO - [2020-01-12 08:29:10,425] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969244 s
+[2020-01-12 08:29:11,328] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:29:15,487] {logging_mixin.py:112} INFO - [2020-01-12 08:29:15,487] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970949 s
+[2020-01-12 08:29:20,561] {logging_mixin.py:112} INFO - [2020-01-12 08:29:20,561] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959716 s
+[2020-01-12 08:29:25,605] {logging_mixin.py:112} INFO - [2020-01-12 08:29:25,605] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970139 s
+[2020-01-12 08:29:30,667] {logging_mixin.py:112} INFO - [2020-01-12 08:29:30,667] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972161 s
+[2020-01-12 08:29:31,375] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:29:35,735] {logging_mixin.py:112} INFO - [2020-01-12 08:29:35,735] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970403 s
+[2020-01-12 08:29:40,765] {logging_mixin.py:112} INFO - [2020-01-12 08:29:40,765] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970024 s
+[2020-01-12 08:29:45,824] {logging_mixin.py:112} INFO - [2020-01-12 08:29:45,824] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962275 s
+[2020-01-12 08:29:50,911] {logging_mixin.py:112} INFO - [2020-01-12 08:29:50,911] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951744 s
+[2020-01-12 08:29:51,391] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:29:55,972] {logging_mixin.py:112} INFO - [2020-01-12 08:29:55,971] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967592 s
+[2020-01-12 08:30:01,051] {logging_mixin.py:112} INFO - [2020-01-12 08:30:01,051] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965339 s
+[2020-01-12 08:30:06,115] {logging_mixin.py:112} INFO - [2020-01-12 08:30:06,115] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.947944 s
+[2020-01-12 08:30:11,193] {logging_mixin.py:112} INFO - [2020-01-12 08:30:11,193] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944623 s
+[2020-01-12 08:30:11,398] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:30:16,257] {logging_mixin.py:112} INFO - [2020-01-12 08:30:16,257] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962537 s
+[2020-01-12 08:30:21,341] {logging_mixin.py:112} INFO - [2020-01-12 08:30:21,341] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966689 s
+[2020-01-12 08:30:26,402] {logging_mixin.py:112} INFO - [2020-01-12 08:30:26,402] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969087 s
+[2020-01-12 08:30:31,459] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:30:31,498] {logging_mixin.py:112} INFO - [2020-01-12 08:30:31,498] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954257 s
+[2020-01-12 08:30:36,512] {logging_mixin.py:112} INFO - [2020-01-12 08:30:36,512] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970456 s
+[2020-01-12 08:30:41,615] {logging_mixin.py:112} INFO - [2020-01-12 08:30:41,615] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.94984 s
+[2020-01-12 08:30:46,648] {logging_mixin.py:112} INFO - [2020-01-12 08:30:46,648] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.974464 s
+[2020-01-12 08:30:51,474] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:30:51,721] {logging_mixin.py:112} INFO - [2020-01-12 08:30:51,721] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964541 s
+[2020-01-12 08:30:56,779] {logging_mixin.py:112} INFO - [2020-01-12 08:30:56,779] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964731 s
+[2020-01-12 08:31:01,866] {logging_mixin.py:112} INFO - [2020-01-12 08:31:01,866] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958605 s
+[2020-01-12 08:31:06,883] {logging_mixin.py:112} INFO - [2020-01-12 08:31:06,883] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.9707 s
+[2020-01-12 08:31:11,483] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:31:11,970] {logging_mixin.py:112} INFO - [2020-01-12 08:31:11,970] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961704 s
+[2020-01-12 08:31:17,025] {logging_mixin.py:112} INFO - [2020-01-12 08:31:17,025] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972907 s
+[2020-01-12 08:31:22,116] {logging_mixin.py:112} INFO - [2020-01-12 08:31:22,116] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961449 s
+[2020-01-12 08:31:27,184] {logging_mixin.py:112} INFO - [2020-01-12 08:31:27,184] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965628 s
+[2020-01-12 08:31:31,531] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:31:32,364] {logging_mixin.py:112} INFO - [2020-01-12 08:31:32,364] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948078 s
+[2020-01-12 08:31:37,377] {logging_mixin.py:112} INFO - [2020-01-12 08:31:37,377] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968179 s
+[2020-01-12 08:31:42,458] {logging_mixin.py:112} INFO - [2020-01-12 08:31:42,458] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961084 s
+[2020-01-12 08:31:47,513] {logging_mixin.py:112} INFO - [2020-01-12 08:31:47,513] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969486 s
+[2020-01-12 08:31:51,539] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:31:52,610] {logging_mixin.py:112} INFO - [2020-01-12 08:31:52,610] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955673 s
+[2020-01-12 08:31:57,667] {logging_mixin.py:112} INFO - [2020-01-12 08:31:57,666] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96879 s
+[2020-01-12 08:32:02,770] {logging_mixin.py:112} INFO - [2020-01-12 08:32:02,769] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959317 s
+[2020-01-12 08:32:07,795] {logging_mixin.py:112} INFO - [2020-01-12 08:32:07,795] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96889 s
+[2020-01-12 08:32:11,554] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:32:12,888] {logging_mixin.py:112} INFO - [2020-01-12 08:32:12,888] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950802 s
+[2020-01-12 08:32:17,951] {logging_mixin.py:112} INFO - [2020-01-12 08:32:17,951] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963697 s
+[2020-01-12 08:32:23,035] {logging_mixin.py:112} INFO - [2020-01-12 08:32:23,035] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953214 s
+[2020-01-12 08:32:28,086] {logging_mixin.py:112} INFO - [2020-01-12 08:32:28,086] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970773 s
+[2020-01-12 08:32:31,585] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:32:33,274] {logging_mixin.py:112} INFO - [2020-01-12 08:32:33,274] {local_task_job.py:124} WARNING - Time since last heartbeat(0.08 s) < heartrate(5.0 s), sleeping for 4.917533 s
+[2020-01-12 08:32:38,275] {logging_mixin.py:112} INFO - [2020-01-12 08:32:38,275] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.941519 s
+[2020-01-12 08:32:43,313] {logging_mixin.py:112} INFO - [2020-01-12 08:32:43,312] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967682 s
+[2020-01-12 08:32:48,382] {logging_mixin.py:112} INFO - [2020-01-12 08:32:48,382] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96538 s
+[2020-01-12 08:32:51,603] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:32:53,485] {logging_mixin.py:112} INFO - [2020-01-12 08:32:53,485] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957255 s
+[2020-01-12 08:32:58,534] {logging_mixin.py:112} INFO - [2020-01-12 08:32:58,534] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969369 s
+[2020-01-12 08:33:03,629] {logging_mixin.py:112} INFO - [2020-01-12 08:33:03,629] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955428 s
+[2020-01-12 08:33:08,643] {logging_mixin.py:112} INFO - [2020-01-12 08:33:08,643] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970286 s
+[2020-01-12 08:33:11,619] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:33:13,726] {logging_mixin.py:112} INFO - [2020-01-12 08:33:13,726] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961652 s
+[2020-01-12 08:33:18,792] {logging_mixin.py:112} INFO - [2020-01-12 08:33:18,792] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968941 s
+[2020-01-12 08:33:23,862] {logging_mixin.py:112} INFO - [2020-01-12 08:33:23,862] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963181 s
+[2020-01-12 08:33:28,919] {logging_mixin.py:112} INFO - [2020-01-12 08:33:28,918] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970655 s
+[2020-01-12 08:33:31,674] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:33:34,011] {logging_mixin.py:112} INFO - [2020-01-12 08:33:34,011] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957604 s
+[2020-01-12 08:33:39,040] {logging_mixin.py:112} INFO - [2020-01-12 08:33:39,039] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970213 s
+[2020-01-12 08:33:44,133] {logging_mixin.py:112} INFO - [2020-01-12 08:33:44,133] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955569 s
+[2020-01-12 08:33:49,180] {logging_mixin.py:112} INFO - [2020-01-12 08:33:49,180] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967513 s
+[2020-01-12 08:33:51,692] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:33:54,278] {logging_mixin.py:112} INFO - [2020-01-12 08:33:54,278] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960595 s
+[2020-01-12 08:33:59,345] {logging_mixin.py:112} INFO - [2020-01-12 08:33:59,345] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969823 s
+[2020-01-12 08:34:04,476] {logging_mixin.py:112} INFO - [2020-01-12 08:34:04,476] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.947394 s
+[2020-01-12 08:34:09,488] {logging_mixin.py:112} INFO - [2020-01-12 08:34:09,487] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971823 s
+[2020-01-12 08:34:11,708] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:34:14,578] {logging_mixin.py:112} INFO - [2020-01-12 08:34:14,578] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965952 s
+[2020-01-12 08:34:19,651] {logging_mixin.py:112} INFO - [2020-01-12 08:34:19,651] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965359 s
+[2020-01-12 08:34:24,731] {logging_mixin.py:112} INFO - [2020-01-12 08:34:24,731] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956652 s
+[2020-01-12 08:34:29,797] {logging_mixin.py:112} INFO - [2020-01-12 08:34:29,797] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966643 s
+[2020-01-12 08:34:31,764] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:34:34,903] {logging_mixin.py:112} INFO - [2020-01-12 08:34:34,902] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.942541 s
+[2020-01-12 08:34:39,892] {logging_mixin.py:112} INFO - [2020-01-12 08:34:39,892] {local_task_job.py:124} WARNING - Time since last heartbeat(0.02 s) < heartrate(5.0 s), sleeping for 4.977109 s
+[2020-01-12 08:34:44,984] {logging_mixin.py:112} INFO - [2020-01-12 08:34:44,983] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958163 s
+[2020-01-12 08:34:50,025] {logging_mixin.py:112} INFO - [2020-01-12 08:34:50,025] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.974881 s
+[2020-01-12 08:34:51,811] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:34:55,123] {logging_mixin.py:112} INFO - [2020-01-12 08:34:55,123] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959282 s
+[2020-01-12 08:35:00,178] {logging_mixin.py:112} INFO - [2020-01-12 08:35:00,178] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971346 s
+[2020-01-12 08:35:05,315] {logging_mixin.py:112} INFO - [2020-01-12 08:35:05,315] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.946405 s
+[2020-01-12 08:35:10,443] {logging_mixin.py:112} INFO - [2020-01-12 08:35:10,443] {local_task_job.py:124} WARNING - Time since last heartbeat(0.08 s) < heartrate(5.0 s), sleeping for 4.919611 s
+[2020-01-12 08:35:11,830] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:35:15,481] {logging_mixin.py:112} INFO - [2020-01-12 08:35:15,481] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950128 s
+[2020-01-12 08:35:20,578] {logging_mixin.py:112} INFO - [2020-01-12 08:35:20,578] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954097 s
+[2020-01-12 08:35:25,640] {logging_mixin.py:112} INFO - [2020-01-12 08:35:25,639] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958197 s
+[2020-01-12 08:35:30,700] {logging_mixin.py:112} INFO - [2020-01-12 08:35:30,700] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971789 s
+[2020-01-12 08:35:31,879] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:35:35,728] {logging_mixin.py:112} INFO - [2020-01-12 08:35:35,728] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966948 s
+[2020-01-12 08:35:40,787] {logging_mixin.py:112} INFO - [2020-01-12 08:35:40,787] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969453 s
+[2020-01-12 08:35:45,848] {logging_mixin.py:112} INFO - [2020-01-12 08:35:45,848] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964439 s
+[2020-01-12 08:35:50,958] {logging_mixin.py:112} INFO - [2020-01-12 08:35:50,958] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969854 s
+[2020-01-12 08:35:51,904] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:35:56,035] {logging_mixin.py:112} INFO - [2020-01-12 08:35:56,035] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959423 s
+[2020-01-12 08:36:01,088] {logging_mixin.py:112} INFO - [2020-01-12 08:36:01,088] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966657 s
+[2020-01-12 08:36:06,125] {logging_mixin.py:112} INFO - [2020-01-12 08:36:06,125] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964217 s
+[2020-01-12 08:36:11,211] {logging_mixin.py:112} INFO - [2020-01-12 08:36:11,210] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.94922 s
+[2020-01-12 08:36:11,918] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:36:16,286] {logging_mixin.py:112} INFO - [2020-01-12 08:36:16,286] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944017 s
+[2020-01-12 08:36:21,325] {logging_mixin.py:112} INFO - [2020-01-12 08:36:21,325] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970975 s
+[2020-01-12 08:36:26,409] {logging_mixin.py:112} INFO - [2020-01-12 08:36:26,409] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960917 s
+[2020-01-12 08:36:31,458] {logging_mixin.py:112} INFO - [2020-01-12 08:36:31,458] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969945 s
+[2020-01-12 08:36:31,960] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:36:36,504] {logging_mixin.py:112} INFO - [2020-01-12 08:36:36,504] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957374 s
+[2020-01-12 08:36:41,571] {logging_mixin.py:112} INFO - [2020-01-12 08:36:41,571] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966826 s
+[2020-01-12 08:36:46,654] {logging_mixin.py:112} INFO - [2020-01-12 08:36:46,653] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957029 s
+[2020-01-12 08:36:51,696] {logging_mixin.py:112} INFO - [2020-01-12 08:36:51,696] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969832 s
+[2020-01-12 08:36:51,964] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:36:56,781] {logging_mixin.py:112} INFO - [2020-01-12 08:36:56,781] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959748 s
+[2020-01-12 08:37:01,858] {logging_mixin.py:112} INFO - [2020-01-12 08:37:01,858] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967444 s
+[2020-01-12 08:37:06,940] {logging_mixin.py:112} INFO - [2020-01-12 08:37:06,940] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.943989 s
+[2020-01-12 08:37:11,978] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:37:11,988] {logging_mixin.py:112} INFO - [2020-01-12 08:37:11,988] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954534 s
+[2020-01-12 08:37:17,045] {logging_mixin.py:112} INFO - [2020-01-12 08:37:17,045] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964863 s
+[2020-01-12 08:37:22,213] {logging_mixin.py:112} INFO - [2020-01-12 08:37:22,212] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955801 s
+[2020-01-12 08:37:27,303] {logging_mixin.py:112} INFO - [2020-01-12 08:37:27,302] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953945 s
+[2020-01-12 08:37:32,024] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:37:32,353] {logging_mixin.py:112} INFO - [2020-01-12 08:37:32,353] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965096 s
+[2020-01-12 08:37:37,431] {logging_mixin.py:112} INFO - [2020-01-12 08:37:37,431] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953823 s
+[2020-01-12 08:37:42,488] {logging_mixin.py:112} INFO - [2020-01-12 08:37:42,488] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967556 s
+[2020-01-12 08:37:47,573] {logging_mixin.py:112} INFO - [2020-01-12 08:37:47,573] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965752 s
+[2020-01-12 08:37:52,042] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:37:52,734] {logging_mixin.py:112} INFO - [2020-01-12 08:37:52,734] {local_task_job.py:124} WARNING - Time since last heartbeat(0.09 s) < heartrate(5.0 s), sleeping for 4.907009 s
+[2020-01-12 08:37:57,746] {logging_mixin.py:112} INFO - [2020-01-12 08:37:57,746] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964517 s
+[2020-01-12 08:38:02,838] {logging_mixin.py:112} INFO - [2020-01-12 08:38:02,838] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954051 s
+[2020-01-12 08:38:07,853] {logging_mixin.py:112} INFO - [2020-01-12 08:38:07,852] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964994 s
+[2020-01-12 08:38:12,059] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:38:12,909] {logging_mixin.py:112} INFO - [2020-01-12 08:38:12,909] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972415 s
+[2020-01-12 08:38:18,004] {logging_mixin.py:112} INFO - [2020-01-12 08:38:18,004] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953047 s
+[2020-01-12 08:38:23,077] {logging_mixin.py:112} INFO - [2020-01-12 08:38:23,077] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958239 s
+[2020-01-12 08:38:28,159] {logging_mixin.py:112} INFO - [2020-01-12 08:38:28,155] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953553 s
+[2020-01-12 08:38:32,100] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:38:33,238] {logging_mixin.py:112} INFO - [2020-01-12 08:38:33,238] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.94258 s
+[2020-01-12 08:38:38,259] {logging_mixin.py:112} INFO - [2020-01-12 08:38:38,259] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960526 s
+[2020-01-12 08:38:43,340] {logging_mixin.py:112} INFO - [2020-01-12 08:38:43,339] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955221 s
+[2020-01-12 08:38:48,405] {logging_mixin.py:112} INFO - [2020-01-12 08:38:48,405] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960157 s
+[2020-01-12 08:38:52,126] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:38:53,480] {logging_mixin.py:112} INFO - [2020-01-12 08:38:53,480] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962147 s
+[2020-01-12 08:38:58,556] {logging_mixin.py:112} INFO - [2020-01-12 08:38:58,556] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961189 s
+[2020-01-12 08:39:03,630] {logging_mixin.py:112} INFO - [2020-01-12 08:39:03,630] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958545 s
+[2020-01-12 08:39:08,677] {logging_mixin.py:112} INFO - [2020-01-12 08:39:08,677] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964751 s
+[2020-01-12 08:39:12,150] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:39:13,773] {logging_mixin.py:112} INFO - [2020-01-12 08:39:13,773] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962464 s
+[2020-01-12 08:39:18,865] {logging_mixin.py:112} INFO - [2020-01-12 08:39:18,865] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957559 s
+[2020-01-12 08:39:23,933] {logging_mixin.py:112} INFO - [2020-01-12 08:39:23,933] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959188 s
+[2020-01-12 08:39:29,047] {logging_mixin.py:112} INFO - [2020-01-12 08:39:29,047] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944873 s
+[2020-01-12 08:39:32,222] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:39:34,187] {logging_mixin.py:112} INFO - [2020-01-12 08:39:34,187] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.930463 s
+[2020-01-12 08:39:39,191] {logging_mixin.py:112} INFO - [2020-01-12 08:39:39,191] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961441 s
+[2020-01-12 08:39:44,247] {logging_mixin.py:112} INFO - [2020-01-12 08:39:44,247] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966105 s
+[2020-01-12 08:39:49,350] {logging_mixin.py:112} INFO - [2020-01-12 08:39:49,350] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953169 s
+[2020-01-12 08:39:52,231] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:39:54,409] {logging_mixin.py:112} INFO - [2020-01-12 08:39:54,409] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964466 s
+[2020-01-12 08:39:59,493] {logging_mixin.py:112} INFO - [2020-01-12 08:39:59,493] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959364 s
+[2020-01-12 08:40:04,567] {logging_mixin.py:112} INFO - [2020-01-12 08:40:04,567] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956005 s
+[2020-01-12 08:40:09,610] {logging_mixin.py:112} INFO - [2020-01-12 08:40:09,609] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954946 s
+[2020-01-12 08:40:12,242] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:40:14,697] {logging_mixin.py:112} INFO - [2020-01-12 08:40:14,697] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.949169 s
+[2020-01-12 08:40:19,761] {logging_mixin.py:112} INFO - [2020-01-12 08:40:19,760] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961269 s
+[2020-01-12 08:40:24,830] {logging_mixin.py:112} INFO - [2020-01-12 08:40:24,830] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961559 s
+[2020-01-12 08:40:29,914] {logging_mixin.py:112} INFO - [2020-01-12 08:40:29,914] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948592 s
+[2020-01-12 08:40:32,290] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:40:35,004] {logging_mixin.py:112} INFO - [2020-01-12 08:40:35,004] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953497 s
+[2020-01-12 08:40:40,056] {logging_mixin.py:112} INFO - [2020-01-12 08:40:40,056] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952873 s
+[2020-01-12 08:40:45,141] {logging_mixin.py:112} INFO - [2020-01-12 08:40:45,141] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960151 s
+[2020-01-12 08:40:50,217] {logging_mixin.py:112} INFO - [2020-01-12 08:40:50,217] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958743 s
+[2020-01-12 08:40:52,294] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:40:55,287] {logging_mixin.py:112} INFO - [2020-01-12 08:40:55,287] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957503 s
+[2020-01-12 08:41:00,359] {logging_mixin.py:112} INFO - [2020-01-12 08:41:00,359] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959411 s
+[2020-01-12 08:41:05,548] {logging_mixin.py:112} INFO - [2020-01-12 08:41:05,548] {local_task_job.py:124} WARNING - Time since last heartbeat(0.09 s) < heartrate(5.0 s), sleeping for 4.910285 s
+[2020-01-12 08:41:10,571] {logging_mixin.py:112} INFO - [2020-01-12 08:41:10,571] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958597 s
+[2020-01-12 08:41:12,300] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:41:15,646] {logging_mixin.py:112} INFO - [2020-01-12 08:41:15,646] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958303 s
+[2020-01-12 08:41:20,747] {logging_mixin.py:112} INFO - [2020-01-12 08:41:20,747] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954888 s
+[2020-01-12 08:41:25,816] {logging_mixin.py:112} INFO - [2020-01-12 08:41:25,816] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969615 s
+[2020-01-12 08:41:30,906] {logging_mixin.py:112} INFO - [2020-01-12 08:41:30,906] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956767 s
+[2020-01-12 08:41:32,342] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:41:35,956] {logging_mixin.py:112} INFO - [2020-01-12 08:41:35,956] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956429 s
+[2020-01-12 08:41:41,038] {logging_mixin.py:112} INFO - [2020-01-12 08:41:41,038] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960161 s
+[2020-01-12 08:41:46,092] {logging_mixin.py:112} INFO - [2020-01-12 08:41:46,092] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970448 s
+[2020-01-12 08:41:51,204] {logging_mixin.py:112} INFO - [2020-01-12 08:41:51,204] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953156 s
+[2020-01-12 08:41:52,354] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:41:56,269] {logging_mixin.py:112} INFO - [2020-01-12 08:41:56,269] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966676 s
+[2020-01-12 08:42:01,336] {logging_mixin.py:112} INFO - [2020-01-12 08:42:01,336] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.97084 s
+[2020-01-12 08:42:06,365] {logging_mixin.py:112} INFO - [2020-01-12 08:42:06,365] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970075 s
+[2020-01-12 08:42:11,443] {logging_mixin.py:112} INFO - [2020-01-12 08:42:11,443] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959498 s
+[2020-01-12 08:42:12,363] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:42:16,505] {logging_mixin.py:112} INFO - [2020-01-12 08:42:16,505] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969613 s
+[2020-01-12 08:42:21,581] {logging_mixin.py:112} INFO - [2020-01-12 08:42:21,581] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964485 s
+[2020-01-12 08:42:26,647] {logging_mixin.py:112} INFO - [2020-01-12 08:42:26,646] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970409 s
+[2020-01-12 08:42:31,755] {logging_mixin.py:112} INFO - [2020-01-12 08:42:31,755] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.940965 s
+[2020-01-12 08:42:32,438] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:42:36,758] {logging_mixin.py:112} INFO - [2020-01-12 08:42:36,758] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969386 s
+[2020-01-12 08:42:41,837] {logging_mixin.py:112} INFO - [2020-01-12 08:42:41,837] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965342 s
+[2020-01-12 08:42:46,919] {logging_mixin.py:112} INFO - [2020-01-12 08:42:46,918] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962183 s
+[2020-01-12 08:42:52,012] {logging_mixin.py:112} INFO - [2020-01-12 08:42:52,012] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956419 s
+[2020-01-12 08:42:52,450] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:42:57,123] {logging_mixin.py:112} INFO - [2020-01-12 08:42:57,123] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.939876 s
+[2020-01-12 08:43:02,170] {logging_mixin.py:112} INFO - [2020-01-12 08:43:02,170] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96733 s
+[2020-01-12 08:43:07,229] {logging_mixin.py:112} INFO - [2020-01-12 08:43:07,228] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.946096 s
+[2020-01-12 08:43:12,307] {logging_mixin.py:112} INFO - [2020-01-12 08:43:12,307] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958727 s
+[2020-01-12 08:43:12,456] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:43:17,383] {logging_mixin.py:112} INFO - [2020-01-12 08:43:17,383] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960547 s
+[2020-01-12 08:43:22,469] {logging_mixin.py:112} INFO - [2020-01-12 08:43:22,469] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956284 s
+[2020-01-12 08:43:27,548] {logging_mixin.py:112} INFO - [2020-01-12 08:43:27,548] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959662 s
+[2020-01-12 08:43:32,505] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:43:32,613] {logging_mixin.py:112} INFO - [2020-01-12 08:43:32,613] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959618 s
+[2020-01-12 08:43:37,648] {logging_mixin.py:112} INFO - [2020-01-12 08:43:37,648] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965763 s
+[2020-01-12 08:43:42,734] {logging_mixin.py:112} INFO - [2020-01-12 08:43:42,734] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956798 s
+[2020-01-12 08:43:47,832] {logging_mixin.py:112} INFO - [2020-01-12 08:43:47,832] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.949166 s
+[2020-01-12 08:43:52,530] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:43:52,996] {logging_mixin.py:112} INFO - [2020-01-12 08:43:52,995] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.95728 s
+[2020-01-12 08:43:58,055] {logging_mixin.py:112} INFO - [2020-01-12 08:43:58,055] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968587 s
+[2020-01-12 08:44:03,161] {logging_mixin.py:112} INFO - [2020-01-12 08:44:03,161] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.949559 s
+[2020-01-12 08:44:08,180] {logging_mixin.py:112} INFO - [2020-01-12 08:44:08,180] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969393 s
+[2020-01-12 08:44:12,537] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:44:13,275] {logging_mixin.py:112} INFO - [2020-01-12 08:44:13,275] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957861 s
+[2020-01-12 08:44:18,335] {logging_mixin.py:112} INFO - [2020-01-12 08:44:18,335] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969668 s
+[2020-01-12 08:44:23,422] {logging_mixin.py:112} INFO - [2020-01-12 08:44:23,422] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951565 s
+[2020-01-12 08:44:28,474] {logging_mixin.py:112} INFO - [2020-01-12 08:44:28,473] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970623 s
+[2020-01-12 08:44:32,585] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:44:33,559] {logging_mixin.py:112} INFO - [2020-01-12 08:44:33,559] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959892 s
+[2020-01-12 08:44:38,581] {logging_mixin.py:112} INFO - [2020-01-12 08:44:38,581] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967757 s
+[2020-01-12 08:44:43,654] {logging_mixin.py:112} INFO - [2020-01-12 08:44:43,654] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961512 s
+[2020-01-12 08:44:48,711] {logging_mixin.py:112} INFO - [2020-01-12 08:44:48,711] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969698 s
+[2020-01-12 08:44:52,598] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:44:53,800] {logging_mixin.py:112} INFO - [2020-01-12 08:44:53,800] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952863 s
+[2020-01-12 08:44:58,855] {logging_mixin.py:112} INFO - [2020-01-12 08:44:58,855] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966542 s
+[2020-01-12 08:45:03,925] {logging_mixin.py:112} INFO - [2020-01-12 08:45:03,925] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960502 s
+[2020-01-12 08:45:08,948] {logging_mixin.py:112} INFO - [2020-01-12 08:45:08,947] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969195 s
+[2020-01-12 08:45:12,591] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:45:14,038] {logging_mixin.py:112} INFO - [2020-01-12 08:45:14,038] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968533 s
+[2020-01-12 08:45:19,102] {logging_mixin.py:112} INFO - [2020-01-12 08:45:19,102] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972439 s
+[2020-01-12 08:45:24,186] {logging_mixin.py:112} INFO - [2020-01-12 08:45:24,185] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954516 s
+[2020-01-12 08:45:29,249] {logging_mixin.py:112} INFO - [2020-01-12 08:45:29,249] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962784 s
+[2020-01-12 08:45:32,637] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:45:34,334] {logging_mixin.py:112} INFO - [2020-01-12 08:45:34,334] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963312 s
+[2020-01-12 08:45:39,378] {logging_mixin.py:112} INFO - [2020-01-12 08:45:39,378] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963726 s
+[2020-01-12 08:45:44,450] {logging_mixin.py:112} INFO - [2020-01-12 08:45:44,450] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965264 s
+[2020-01-12 08:45:49,527] {logging_mixin.py:112} INFO - [2020-01-12 08:45:49,527] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969508 s
+[2020-01-12 08:45:52,650] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:45:54,647] {logging_mixin.py:112} INFO - [2020-01-12 08:45:54,647] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.945967 s
+[2020-01-12 08:45:59,699] {logging_mixin.py:112} INFO - [2020-01-12 08:45:59,699] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958737 s
+[2020-01-12 08:46:04,761] {logging_mixin.py:112} INFO - [2020-01-12 08:46:04,760] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963606 s
+[2020-01-12 08:46:09,792] {logging_mixin.py:112} INFO - [2020-01-12 08:46:09,792] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965685 s
+[2020-01-12 08:46:12,667] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:46:14,885] {logging_mixin.py:112} INFO - [2020-01-12 08:46:14,885] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944162 s
+[2020-01-12 08:46:19,944] {logging_mixin.py:112} INFO - [2020-01-12 08:46:19,944] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956019 s
+[2020-01-12 08:46:25,060] {logging_mixin.py:112} INFO - [2020-01-12 08:46:25,060] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944906 s
+[2020-01-12 08:46:30,123] {logging_mixin.py:112} INFO - [2020-01-12 08:46:30,123] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.95717 s
+[2020-01-12 08:46:32,704] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:46:35,193] {logging_mixin.py:112} INFO - [2020-01-12 08:46:35,192] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.939087 s
+[2020-01-12 08:46:40,268] {logging_mixin.py:112} INFO - [2020-01-12 08:46:40,267] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953513 s
+[2020-01-12 08:46:45,352] {logging_mixin.py:112} INFO - [2020-01-12 08:46:45,352] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959216 s
+[2020-01-12 08:46:50,438] {logging_mixin.py:112} INFO - [2020-01-12 08:46:50,438] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953426 s
+[2020-01-12 08:46:52,700] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:46:55,538] {logging_mixin.py:112} INFO - [2020-01-12 08:46:55,538] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.946824 s
+[2020-01-12 08:47:00,603] {logging_mixin.py:112} INFO - [2020-01-12 08:47:00,603] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966486 s
+[2020-01-12 08:47:05,654] {logging_mixin.py:112} INFO - [2020-01-12 08:47:05,653] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955351 s
+[2020-01-12 08:47:10,718] {logging_mixin.py:112} INFO - [2020-01-12 08:47:10,717] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966468 s
+[2020-01-12 08:47:12,721] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:47:15,829] {logging_mixin.py:112} INFO - [2020-01-12 08:47:15,828] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.945232 s
+[2020-01-12 08:47:20,884] {logging_mixin.py:112} INFO - [2020-01-12 08:47:20,884] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964794 s
+[2020-01-12 08:47:26,002] {logging_mixin.py:112} INFO - [2020-01-12 08:47:26,001] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.945944 s
+[2020-01-12 08:47:31,077] {logging_mixin.py:112} INFO - [2020-01-12 08:47:31,077] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966576 s
+[2020-01-12 08:47:32,767] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:47:36,238] {logging_mixin.py:112} INFO - [2020-01-12 08:47:36,238] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.93374 s
+[2020-01-12 08:47:41,305] {logging_mixin.py:112} INFO - [2020-01-12 08:47:41,305] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960049 s
+[2020-01-12 08:47:46,395] {logging_mixin.py:112} INFO - [2020-01-12 08:47:46,392] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964606 s
+[2020-01-12 08:47:51,454] {logging_mixin.py:112} INFO - [2020-01-12 08:47:51,454] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970725 s
+[2020-01-12 08:47:52,786] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:47:56,542] {logging_mixin.py:112} INFO - [2020-01-12 08:47:56,542] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960676 s
+[2020-01-12 08:48:01,632] {logging_mixin.py:112} INFO - [2020-01-12 08:48:01,632] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.94929 s
+[2020-01-12 08:48:06,678] {logging_mixin.py:112} INFO - [2020-01-12 08:48:06,678] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.940251 s
+[2020-01-12 08:48:11,731] {logging_mixin.py:112} INFO - [2020-01-12 08:48:11,731] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966865 s
+[2020-01-12 08:48:12,798] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:48:16,825] {logging_mixin.py:112} INFO - [2020-01-12 08:48:16,825] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960281 s
+[2020-01-12 08:48:21,874] {logging_mixin.py:112} INFO - [2020-01-12 08:48:21,874] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969175 s
+[2020-01-12 08:48:26,970] {logging_mixin.py:112} INFO - [2020-01-12 08:48:26,970] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951397 s
+[2020-01-12 08:48:32,025] {logging_mixin.py:112} INFO - [2020-01-12 08:48:32,025] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963533 s
+[2020-01-12 08:48:32,855] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:48:37,089] {logging_mixin.py:112} INFO - [2020-01-12 08:48:37,089] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964219 s
+[2020-01-12 08:48:42,170] {logging_mixin.py:112} INFO - [2020-01-12 08:48:42,170] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.952038 s
+[2020-01-12 08:48:47,260] {logging_mixin.py:112} INFO - [2020-01-12 08:48:47,260] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.942634 s
+[2020-01-12 08:48:52,320] {logging_mixin.py:112} INFO - [2020-01-12 08:48:52,320] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.96433 s
+[2020-01-12 08:48:52,876] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:48:57,428] {logging_mixin.py:112} INFO - [2020-01-12 08:48:57,428] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958051 s
+[2020-01-12 08:49:02,509] {logging_mixin.py:112} INFO - [2020-01-12 08:49:02,509] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953607 s
+[2020-01-12 08:49:07,654] {logging_mixin.py:112} INFO - [2020-01-12 08:49:07,654] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.929413 s
+[2020-01-12 08:49:12,706] {logging_mixin.py:112} INFO - [2020-01-12 08:49:12,706] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967846 s
+[2020-01-12 08:49:12,899] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:49:17,801] {logging_mixin.py:112} INFO - [2020-01-12 08:49:17,801] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.945064 s
+[2020-01-12 08:49:22,839] {logging_mixin.py:112} INFO - [2020-01-12 08:49:22,839] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970861 s
+[2020-01-12 08:49:27,946] {logging_mixin.py:112} INFO - [2020-01-12 08:49:27,946] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958949 s
+[2020-01-12 08:49:32,954] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:49:33,022] {logging_mixin.py:112} INFO - [2020-01-12 08:49:33,022] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959954 s
+[2020-01-12 08:49:38,076] {logging_mixin.py:112} INFO - [2020-01-12 08:49:38,076] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959169 s
+[2020-01-12 08:49:43,153] {logging_mixin.py:112} INFO - [2020-01-12 08:49:43,153] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962252 s
+[2020-01-12 08:49:48,224] {logging_mixin.py:112} INFO - [2020-01-12 08:49:48,224] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959135 s
+[2020-01-12 08:49:52,964] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:49:53,294] {logging_mixin.py:112} INFO - [2020-01-12 08:49:53,294] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968083 s
+[2020-01-12 08:49:58,369] {logging_mixin.py:112} INFO - [2020-01-12 08:49:58,369] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971725 s
+[2020-01-12 08:50:03,436] {logging_mixin.py:112} INFO - [2020-01-12 08:50:03,436] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968867 s
+[2020-01-12 08:50:08,508] {logging_mixin.py:112} INFO - [2020-01-12 08:50:08,508] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955913 s
+[2020-01-12 08:50:12,973] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:50:13,563] {logging_mixin.py:112} INFO - [2020-01-12 08:50:13,563] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969537 s
+[2020-01-12 08:50:18,690] {logging_mixin.py:112} INFO - [2020-01-12 08:50:18,690] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953158 s
+[2020-01-12 08:50:23,742] {logging_mixin.py:112} INFO - [2020-01-12 08:50:23,742] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966224 s
+[2020-01-12 08:50:28,819] {logging_mixin.py:112} INFO - [2020-01-12 08:50:28,819] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960392 s
+[2020-01-12 08:50:33,031] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:50:33,885] {logging_mixin.py:112} INFO - [2020-01-12 08:50:33,885] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970092 s
+[2020-01-12 08:50:38,942] {logging_mixin.py:112} INFO - [2020-01-12 08:50:38,941] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954521 s
+[2020-01-12 08:50:44,016] {logging_mixin.py:112} INFO - [2020-01-12 08:50:44,015] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967978 s
+[2020-01-12 08:50:49,101] {logging_mixin.py:112} INFO - [2020-01-12 08:50:49,101] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958425 s
+[2020-01-12 08:50:53,037] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:50:54,150] {logging_mixin.py:112} INFO - [2020-01-12 08:50:54,150] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969248 s
+[2020-01-12 08:50:59,218] {logging_mixin.py:112} INFO - [2020-01-12 08:50:59,217] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967877 s
+[2020-01-12 08:51:04,289] {logging_mixin.py:112} INFO - [2020-01-12 08:51:04,289] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959186 s
+[2020-01-12 08:51:09,383] {logging_mixin.py:112} INFO - [2020-01-12 08:51:09,379] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.929661 s
+[2020-01-12 08:51:13,048] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:51:14,404] {logging_mixin.py:112} INFO - [2020-01-12 08:51:14,404] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967214 s
+[2020-01-12 08:51:19,462] {logging_mixin.py:112} INFO - [2020-01-12 08:51:19,462] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969537 s
+[2020-01-12 08:51:24,583] {logging_mixin.py:112} INFO - [2020-01-12 08:51:24,583] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954196 s
+[2020-01-12 08:51:29,637] {logging_mixin.py:112} INFO - [2020-01-12 08:51:29,637] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967874 s
+[2020-01-12 08:51:33,095] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:51:34,693] {logging_mixin.py:112} INFO - [2020-01-12 08:51:34,693] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959652 s
+[2020-01-12 08:51:39,772] {logging_mixin.py:112} INFO - [2020-01-12 08:51:39,772] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956877 s
+[2020-01-12 08:51:44,870] {logging_mixin.py:112} INFO - [2020-01-12 08:51:44,869] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950553 s
+[2020-01-12 08:51:49,904] {logging_mixin.py:112} INFO - [2020-01-12 08:51:49,904] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970797 s
+[2020-01-12 08:51:53,108] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:51:55,053] {logging_mixin.py:112} INFO - [2020-01-12 08:51:55,052] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944804 s
+[2020-01-12 08:52:00,091] {logging_mixin.py:112} INFO - [2020-01-12 08:52:00,091] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96986 s
+[2020-01-12 08:52:05,134] {logging_mixin.py:112} INFO - [2020-01-12 08:52:05,134] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971274 s
+[2020-01-12 08:52:10,198] {logging_mixin.py:112} INFO - [2020-01-12 08:52:10,197] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970214 s
+[2020-01-12 08:52:13,115] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:52:15,279] {logging_mixin.py:112} INFO - [2020-01-12 08:52:15,279] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965893 s
+[2020-01-12 08:52:20,362] {logging_mixin.py:112} INFO - [2020-01-12 08:52:20,362] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971421 s
+[2020-01-12 08:52:25,447] {logging_mixin.py:112} INFO - [2020-01-12 08:52:25,447] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956383 s
+[2020-01-12 08:52:30,503] {logging_mixin.py:112} INFO - [2020-01-12 08:52:30,503] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965941 s
+[2020-01-12 08:52:33,168] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:52:35,571] {logging_mixin.py:112} INFO - [2020-01-12 08:52:35,571] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951625 s
+[2020-01-12 08:52:40,614] {logging_mixin.py:112} INFO - [2020-01-12 08:52:40,614] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969654 s
+[2020-01-12 08:52:45,711] {logging_mixin.py:112} INFO - [2020-01-12 08:52:45,711] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950613 s
+[2020-01-12 08:52:50,778] {logging_mixin.py:112} INFO - [2020-01-12 08:52:50,778] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965807 s
+[2020-01-12 08:52:53,188] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:52:55,850] {logging_mixin.py:112} INFO - [2020-01-12 08:52:55,849] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962782 s
+[2020-01-12 08:53:00,932] {logging_mixin.py:112} INFO - [2020-01-12 08:53:00,931] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964292 s
+[2020-01-12 08:53:05,964] {logging_mixin.py:112} INFO - [2020-01-12 08:53:05,964] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961864 s
+[2020-01-12 08:53:11,031] {logging_mixin.py:112} INFO - [2020-01-12 08:53:11,031] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968299 s
+[2020-01-12 08:53:13,198] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:53:16,116] {logging_mixin.py:112} INFO - [2020-01-12 08:53:16,116] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961231 s
+[2020-01-12 08:53:21,169] {logging_mixin.py:112} INFO - [2020-01-12 08:53:21,169] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966374 s
+[2020-01-12 08:53:26,248] {logging_mixin.py:112} INFO - [2020-01-12 08:53:26,247] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963691 s
+[2020-01-12 08:53:31,356] {logging_mixin.py:112} INFO - [2020-01-12 08:53:31,355] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.949126 s
+[2020-01-12 08:53:33,249] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:53:36,410] {logging_mixin.py:112} INFO - [2020-01-12 08:53:36,409] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965018 s
+[2020-01-12 08:53:41,477] {logging_mixin.py:112} INFO - [2020-01-12 08:53:41,477] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958154 s
+[2020-01-12 08:53:46,548] {logging_mixin.py:112} INFO - [2020-01-12 08:53:46,548] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960759 s
+[2020-01-12 08:53:51,600] {logging_mixin.py:112} INFO - [2020-01-12 08:53:51,600] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971452 s
+[2020-01-12 08:53:53,246] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:53:56,770] {logging_mixin.py:112} INFO - [2020-01-12 08:53:56,770] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948401 s
+[2020-01-12 08:54:01,825] {logging_mixin.py:112} INFO - [2020-01-12 08:54:01,825] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.970461 s
+[2020-01-12 08:54:06,893] {logging_mixin.py:112} INFO - [2020-01-12 08:54:06,893] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.95427 s
+[2020-01-12 08:54:11,960] {logging_mixin.py:112} INFO - [2020-01-12 08:54:11,960] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.953997 s
+[2020-01-12 08:54:13,274] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:54:17,023] {logging_mixin.py:112} INFO - [2020-01-12 08:54:17,023] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959817 s
+[2020-01-12 08:54:22,070] {logging_mixin.py:112} INFO - [2020-01-12 08:54:22,070] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971105 s
+[2020-01-12 08:54:27,172] {logging_mixin.py:112} INFO - [2020-01-12 08:54:27,172] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.94454 s
+[2020-01-12 08:54:32,214] {logging_mixin.py:112} INFO - [2020-01-12 08:54:32,214] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971601 s
+[2020-01-12 08:54:33,318] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:54:37,261] {logging_mixin.py:112} INFO - [2020-01-12 08:54:37,260] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962848 s
+[2020-01-12 08:54:42,349] {logging_mixin.py:112} INFO - [2020-01-12 08:54:42,349] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958532 s
+[2020-01-12 08:54:47,413] {logging_mixin.py:112} INFO - [2020-01-12 08:54:47,413] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963746 s
+[2020-01-12 08:54:52,475] {logging_mixin.py:112} INFO - [2020-01-12 08:54:52,475] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968474 s
+[2020-01-12 08:54:53,329] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:54:57,561] {logging_mixin.py:112} INFO - [2020-01-12 08:54:57,561] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961398 s
+[2020-01-12 08:55:02,613] {logging_mixin.py:112} INFO - [2020-01-12 08:55:02,613] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971949 s
+[2020-01-12 08:55:07,654] {logging_mixin.py:112} INFO - [2020-01-12 08:55:07,654] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.96107 s
+[2020-01-12 08:55:12,736] {logging_mixin.py:112} INFO - [2020-01-12 08:55:12,736] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959178 s
+[2020-01-12 08:55:13,346] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:55:17,823] {logging_mixin.py:112} INFO - [2020-01-12 08:55:17,823] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951419 s
+[2020-01-12 08:55:22,883] {logging_mixin.py:112} INFO - [2020-01-12 08:55:22,883] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959133 s
+[2020-01-12 08:55:27,960] {logging_mixin.py:112} INFO - [2020-01-12 08:55:27,960] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.957246 s
+[2020-01-12 08:55:33,044] {logging_mixin.py:112} INFO - [2020-01-12 08:55:33,044] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950764 s
+[2020-01-12 08:55:33,403] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:55:38,087] {logging_mixin.py:112} INFO - [2020-01-12 08:55:38,087] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955027 s
+[2020-01-12 08:55:43,172] {logging_mixin.py:112} INFO - [2020-01-12 08:55:43,172] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.949813 s
+[2020-01-12 08:55:48,256] {logging_mixin.py:112} INFO - [2020-01-12 08:55:48,255] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.936214 s
+[2020-01-12 08:55:53,310] {logging_mixin.py:112} INFO - [2020-01-12 08:55:53,310] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960235 s
+[2020-01-12 08:55:53,419] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:55:58,511] {logging_mixin.py:112} INFO - [2020-01-12 08:55:58,511] {local_task_job.py:124} WARNING - Time since last heartbeat(0.08 s) < heartrate(5.0 s), sleeping for 4.923037 s
+[2020-01-12 08:56:03,543] {logging_mixin.py:112} INFO - [2020-01-12 08:56:03,543] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959173 s
+[2020-01-12 08:56:08,614] {logging_mixin.py:112} INFO - [2020-01-12 08:56:08,614] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951905 s
+[2020-01-12 08:56:13,435] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:56:13,750] {logging_mixin.py:112} INFO - [2020-01-12 08:56:13,750] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.93578 s
+[2020-01-12 08:56:18,794] {logging_mixin.py:112} INFO - [2020-01-12 08:56:18,794] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.961875 s
+[2020-01-12 08:56:23,842] {logging_mixin.py:112} INFO - [2020-01-12 08:56:23,842] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971512 s
+[2020-01-12 08:56:28,943] {logging_mixin.py:112} INFO - [2020-01-12 08:56:28,942] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.945889 s
+[2020-01-12 08:56:33,482] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:56:34,010] {logging_mixin.py:112} INFO - [2020-01-12 08:56:34,010] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966365 s
+[2020-01-12 08:56:39,291] {logging_mixin.py:112} INFO - [2020-01-12 08:56:39,291] {local_task_job.py:124} WARNING - Time since last heartbeat(0.09 s) < heartrate(5.0 s), sleeping for 4.908357 s
+[2020-01-12 08:56:44,349] {logging_mixin.py:112} INFO - [2020-01-12 08:56:44,348] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.936692 s
+[2020-01-12 08:56:49,381] {logging_mixin.py:112} INFO - [2020-01-12 08:56:49,381] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969769 s
+[2020-01-12 08:56:53,501] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:56:54,492] {logging_mixin.py:112} INFO - [2020-01-12 08:56:54,492] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.939868 s
+[2020-01-12 08:56:59,523] {logging_mixin.py:112} INFO - [2020-01-12 08:56:59,523] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969121 s
+[2020-01-12 08:57:04,571] {logging_mixin.py:112} INFO - [2020-01-12 08:57:04,571] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968342 s
+[2020-01-12 08:57:09,654] {logging_mixin.py:112} INFO - [2020-01-12 08:57:09,654] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96537 s
+[2020-01-12 08:57:13,516] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:57:14,731] {logging_mixin.py:112} INFO - [2020-01-12 08:57:14,731] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963787 s
+[2020-01-12 08:57:19,779] {logging_mixin.py:112} INFO - [2020-01-12 08:57:19,779] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971587 s
+[2020-01-12 08:57:24,839] {logging_mixin.py:112} INFO - [2020-01-12 08:57:24,839] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.972479 s
+[2020-01-12 08:57:29,912] {logging_mixin.py:112} INFO - [2020-01-12 08:57:29,912] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965292 s
+[2020-01-12 08:57:33,565] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:57:34,931] {logging_mixin.py:112} INFO - [2020-01-12 08:57:34,931] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969551 s
+[2020-01-12 08:57:40,031] {logging_mixin.py:112} INFO - [2020-01-12 08:57:40,031] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967268 s
+[2020-01-12 08:57:45,158] {logging_mixin.py:112} INFO - [2020-01-12 08:57:45,157] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.927503 s
+[2020-01-12 08:57:50,180] {logging_mixin.py:112} INFO - [2020-01-12 08:57:50,180] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965589 s
+[2020-01-12 08:57:53,585] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:57:55,293] {logging_mixin.py:112} INFO - [2020-01-12 08:57:55,293] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.940536 s
+[2020-01-12 08:58:00,330] {logging_mixin.py:112} INFO - [2020-01-12 08:58:00,330] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966328 s
+[2020-01-12 08:58:05,388] {logging_mixin.py:112} INFO - [2020-01-12 08:58:05,387] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.950312 s
+[2020-01-12 08:58:10,432] {logging_mixin.py:112} INFO - [2020-01-12 08:58:10,432] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.96965 s
+[2020-01-12 08:58:13,603] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:58:15,541] {logging_mixin.py:112} INFO - [2020-01-12 08:58:15,541] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.951271 s
+[2020-01-12 08:58:20,586] {logging_mixin.py:112} INFO - [2020-01-12 08:58:20,586] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969029 s
+[2020-01-12 08:58:25,683] {logging_mixin.py:112} INFO - [2020-01-12 08:58:25,683] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.956885 s
+[2020-01-12 08:58:30,737] {logging_mixin.py:112} INFO - [2020-01-12 08:58:30,737] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968313 s
+[2020-01-12 08:58:33,657] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:58:35,776] {logging_mixin.py:112} INFO - [2020-01-12 08:58:35,776] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.963936 s
+[2020-01-12 08:58:40,831] {logging_mixin.py:112} INFO - [2020-01-12 08:58:40,831] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.969425 s
+[2020-01-12 08:58:45,935] {logging_mixin.py:112} INFO - [2020-01-12 08:58:45,935] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.954028 s
+[2020-01-12 08:58:50,993] {logging_mixin.py:112} INFO - [2020-01-12 08:58:50,993] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967319 s
+[2020-01-12 08:58:53,667] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:58:56,087] {logging_mixin.py:112} INFO - [2020-01-12 08:58:56,086] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.965151 s
+[2020-01-12 08:59:01,151] {logging_mixin.py:112} INFO - [2020-01-12 08:59:01,150] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.966571 s
+[2020-01-12 08:59:06,205] {logging_mixin.py:112} INFO - [2020-01-12 08:59:06,205] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.955349 s
+[2020-01-12 08:59:11,259] {logging_mixin.py:112} INFO - [2020-01-12 08:59:11,259] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967345 s
+[2020-01-12 08:59:13,683] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:59:16,353] {logging_mixin.py:112} INFO - [2020-01-12 08:59:16,352] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959815 s
+[2020-01-12 08:59:21,428] {logging_mixin.py:112} INFO - [2020-01-12 08:59:21,428] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.959769 s
+[2020-01-12 08:59:26,536] {logging_mixin.py:112} INFO - [2020-01-12 08:59:26,536] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.930936 s
+[2020-01-12 08:59:31,569] {logging_mixin.py:112} INFO - [2020-01-12 08:59:31,569] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971404 s
+[2020-01-12 08:59:33,732] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:59:36,620] {logging_mixin.py:112} INFO - [2020-01-12 08:59:36,620] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.960291 s
+[2020-01-12 08:59:41,711] {logging_mixin.py:112} INFO - [2020-01-12 08:59:41,711] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.931677 s
+[2020-01-12 08:59:46,757] {logging_mixin.py:112} INFO - [2020-01-12 08:59:46,757] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.958752 s
+[2020-01-12 08:59:51,805] {logging_mixin.py:112} INFO - [2020-01-12 08:59:51,805] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.971757 s
+[2020-01-12 08:59:53,747] {file_sensor.py:60} INFO - Poking for file /usr/local/airflow/storage/input/run
+[2020-01-12 08:59:56,935] {logging_mixin.py:112} INFO - [2020-01-12 08:59:56,935] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.947138 s
+[2020-01-12 09:00:01,975] {logging_mixin.py:112} INFO - [2020-01-12 09:00:01,974] {local_task_job.py:124} WARNING - Time since last heartbeat(0.02 s) < heartrate(5.0 s), sleeping for 4.97594 s
+[2020-01-12 15:09:55,845] {logging_mixin.py:112} INFO - [2020-01-12 15:09:55,844] {local_task_job.py:167} WARNING - State of this instance has been externally set to failed. Taking the poison pill.
+[2020-01-12 15:09:55,849] {helpers.py:308} INFO - Sending Signals.SIGTERM to GPID 8347
+[2020-01-12 15:09:55,849] {taskinstance.py:905} ERROR - Received SIGTERM. Terminating subprocesses.
+[2020-01-12 15:09:56,253] {helpers.py:286} INFO - Process psutil.Process(pid=8347, status='terminated') (8347) terminated with exit code 0
+[2020-01-12 15:09:56,254] {logging_mixin.py:112} INFO - [2020-01-12 15:09:56,254] {local_task_job.py:124} WARNING - Time since last heartbeat(0.46 s) < heartrate(5.0 s), sleeping for 4.542586 s
+[2020-01-12 15:10:00,801] {logging_mixin.py:112} INFO - [2020-01-12 15:10:00,801] {local_task_job.py:103} INFO - Task exited with return code 0

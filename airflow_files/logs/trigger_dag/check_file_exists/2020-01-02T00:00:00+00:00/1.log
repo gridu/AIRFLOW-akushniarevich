@@ -1,0 +1,77 @@
+[2020-01-08 16:41:17,860] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.check_file_exists 2020-01-02T00:00:00+00:00 [queued]>
+[2020-01-08 16:41:17,995] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.check_file_exists 2020-01-02T00:00:00+00:00 [queued]>
+[2020-01-08 16:41:17,995] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 16:41:17,997] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-08 16:41:17,999] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 16:41:18,251] {taskinstance.py:862} INFO - Executing <Task(FileSensor): check_file_exists> on 2020-01-02T00:00:00+00:00
+[2020-01-08 16:41:18,255] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag', 'check_file_exists', '2020-01-02T00:00:00+00:00', '--job_id', '40', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmp4jiaoded']
+[2020-01-08 16:41:22,902] {logging_mixin.py:112} INFO - [2020-01-08 16:41:22,887] {local_task_job.py:124} WARNING - Time since last heartbeat(0.13 s) < heartrate(5.0 s), sleeping for 4.866805 s
+[2020-01-08 16:41:22,927] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 16:41:22,930] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   FutureWarning
+[2020-01-08 16:41:22,939] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 16:41:22,940] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 16:41:22,941] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 16:41:22,942] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 16:41:22,942] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 16:41:22,943] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 16:41:24,437] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists [2020-01-08 16:41:24,437] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=675
+[2020-01-08 16:41:28,174] {logging_mixin.py:112} INFO - [2020-01-08 16:41:28,174] {local_task_job.py:124} WARNING - Time since last heartbeat(0.11 s) < heartrate(5.0 s), sleeping for 4.886579 s
+[2020-01-08 16:41:33,298] {logging_mixin.py:112} INFO - [2020-01-08 16:41:33,298] {local_task_job.py:124} WARNING - Time since last heartbeat(0.07 s) < heartrate(5.0 s), sleeping for 4.934329 s
+[2020-01-08 16:41:33,979] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists [2020-01-08 16:41:33,933] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 16:41:33,983] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists [2020-01-08 16:41:33,967] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-08 16:41:34,943] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists [2020-01-08 16:41:34,841] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.check_file_exists 2020-01-02T00:00:00+00:00 [running]> on host b345e2145899
+[2020-01-08 16:41:35,509] {taskinstance.py:1058} ERROR - The conn_id `fs_airflow` isn't defined
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 930, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/usr/local/lib/python3.7/site-packages/airflow/sensors/base_sensor_operator.py", line 107, in execute
+    while not self.poke(context):
+  File "/usr/local/lib/python3.7/site-packages/airflow/contrib/sensors/file_sensor.py", line 57, in poke
+    hook = FSHook(self.fs_conn_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/contrib/hooks/fs_hook.py", line 38, in __init__
+    conn = self.get_connection(conn_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 81, in get_connection
+    conn = random.choice(list(cls.get_connections(conn_id)))
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 76, in get_connections
+    conns = cls._get_connections_from_db(conn_id)
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 59, in _get_connections_from_db
+    "The conn_id `{0}` isn't defined".format(conn_id))
+airflow.exceptions.AirflowException: The conn_id `fs_airflow` isn't defined
+[2020-01-08 16:41:35,541] {taskinstance.py:1089} INFO - Marking task as FAILED.
+[2020-01-08 16:41:36,046] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists Traceback (most recent call last):
+[2020-01-08 16:41:36,049] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/bin/airflow", line 37, in <module>
+[2020-01-08 16:41:36,052] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     args.func(args)
+[2020-01-08 16:41:36,055] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2020-01-08 16:41:36,057] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     return f(*args, **kwargs)
+[2020-01-08 16:41:36,059] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 551, in run
+[2020-01-08 16:41:36,067] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     _run(args, dag, ti)
+[2020-01-08 16:41:36,068] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 469, in _run
+[2020-01-08 16:41:36,069] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     pool=args.pool,
+[2020-01-08 16:41:36,070] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2020-01-08 16:41:36,071] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     return func(*args, **kwargs)
+[2020-01-08 16:41:36,071] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 930, in _run_raw_task
+[2020-01-08 16:41:36,072] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     result = task_copy.execute(context=context)
+[2020-01-08 16:41:36,087] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/sensors/base_sensor_operator.py", line 107, in execute
+[2020-01-08 16:41:36,090] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     while not self.poke(context):
+[2020-01-08 16:41:36,091] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/contrib/sensors/file_sensor.py", line 57, in poke
+[2020-01-08 16:41:36,093] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     hook = FSHook(self.fs_conn_id)
+[2020-01-08 16:41:36,096] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/contrib/hooks/fs_hook.py", line 38, in __init__
+[2020-01-08 16:41:36,097] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     conn = self.get_connection(conn_id)
+[2020-01-08 16:41:36,099] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 81, in get_connection
+[2020-01-08 16:41:36,102] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     conn = random.choice(list(cls.get_connections(conn_id)))
+[2020-01-08 16:41:36,110] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 76, in get_connections
+[2020-01-08 16:41:36,142] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     conns = cls._get_connections_from_db(conn_id)
+[2020-01-08 16:41:36,150] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2020-01-08 16:41:36,158] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     return func(*args, **kwargs)
+[2020-01-08 16:41:36,175] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists   File "/usr/local/lib/python3.7/site-packages/airflow/hooks/base_hook.py", line 59, in _get_connections_from_db
+[2020-01-08 16:41:36,176] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists     "The conn_id `{0}` isn't defined".format(conn_id))
+[2020-01-08 16:41:36,179] {base_task_runner.py:115} INFO - Job 40: Subtask check_file_exists airflow.exceptions.AirflowException: The conn_id `fs_airflow` isn't defined
+[2020-01-08 16:41:38,817] {logging_mixin.py:112} INFO - [2020-01-08 16:41:38,816] {local_task_job.py:167} WARNING - State of this instance has been externally set to failed. Taking the poison pill.
+[2020-01-08 16:41:38,827] {helpers.py:308} INFO - Sending Signals.SIGTERM to GPID 675
+[2020-01-08 16:41:38,982] {helpers.py:286} INFO - Process psutil.Process(pid=675, status='terminated') (675) terminated with exit code -15
+[2020-01-08 16:41:39,028] {logging_mixin.py:112} INFO - [2020-01-08 16:41:39,018] {local_task_job.py:124} WARNING - Time since last heartbeat(0.57 s) < heartrate(5.0 s), sleeping for 4.425626 s
+[2020-01-08 16:41:43,461] {logging_mixin.py:112} INFO - [2020-01-08 16:41:43,459] {local_task_job.py:103} INFO - Task exited with return code 0

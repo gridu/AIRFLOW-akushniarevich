@@ -1,0 +1,23 @@
+[2020-01-08 17:40:27,986] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.skip_table_creation 2020-01-08T17:38:36.564037+00:00 [queued]>
+[2020-01-08 17:40:28,105] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.skip_table_creation 2020-01-08T17:38:36.564037+00:00 [queued]>
+[2020-01-08 17:40:28,105] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:40:28,105] {taskinstance.py:842} INFO - Starting attempt 2 of 2
+[2020-01-08 17:40:28,106] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:40:28,124] {taskinstance.py:862} INFO - Executing <Task(DummyOperator): skip_table_creation> on 2020-01-08T17:38:36.564037+00:00
+[2020-01-08 17:40:28,125] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'dag_id_0', 'skip_table_creation', '2020-01-08T17:38:36.564037+00:00', '--job_id', '83', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/jobs_dag.py', '--cfg_path', '/tmp/tmpw6q0ki9m']
+[2020-01-08 17:40:28,793] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 17:40:28,794] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation   FutureWarning
+[2020-01-08 17:40:28,794] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 17:40:28,795] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 17:40:28,795] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 17:40:28,796] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 17:40:28,796] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 17:40:28,797] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 17:40:28,897] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation [2020-01-08 17:40:28,896] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=586
+[2020-01-08 17:40:29,753] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation [2020-01-08 17:40:29,753] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 17:40:29,754] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation [2020-01-08 17:40:29,753] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/jobs_dag.py
+[2020-01-08 17:40:29,940] {base_task_runner.py:115} INFO - Job 83: Subtask skip_table_creation [2020-01-08 17:40:29,939] {cli.py:545} INFO - Running <TaskInstance: dag_id_0.skip_table_creation 2020-01-08T17:38:36.564037+00:00 [running]> on host 6667999380fe
+[2020-01-08 17:40:32,928] {logging_mixin.py:112} INFO - [2020-01-08 17:40:32,928] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.967674 s
+[2020-01-08 17:40:37,902] {logging_mixin.py:112} INFO - [2020-01-08 17:40:37,901] {local_task_job.py:103} INFO - Task exited with return code 0

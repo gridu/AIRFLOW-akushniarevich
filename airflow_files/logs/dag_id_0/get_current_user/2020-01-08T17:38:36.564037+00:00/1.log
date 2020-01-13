@@ -1,0 +1,35 @@
+[2020-01-08 17:38:50,986] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.get_current_user 2020-01-08T17:38:36.564037+00:00 [queued]>
+[2020-01-08 17:38:51,176] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.get_current_user 2020-01-08T17:38:36.564037+00:00 [queued]>
+[2020-01-08 17:38:51,176] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:38:51,177] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-08 17:38:51,177] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:38:51,208] {taskinstance.py:862} INFO - Executing <Task(BashOperator): get_current_user> on 2020-01-08T17:38:36.564037+00:00
+[2020-01-08 17:38:51,209] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'dag_id_0', 'get_current_user', '2020-01-08T17:38:36.564037+00:00', '--job_id', '76', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/jobs_dag.py', '--cfg_path', '/tmp/tmpqq71d6sx']
+[2020-01-08 17:38:52,607] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 17:38:52,607] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user   FutureWarning
+[2020-01-08 17:38:52,608] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 17:38:52,608] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 17:38:52,609] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 17:38:52,609] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 17:38:52,610] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 17:38:52,610] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 17:38:52,781] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user [2020-01-08 17:38:52,781] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=520
+[2020-01-08 17:38:53,951] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user [2020-01-08 17:38:53,951] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 17:38:53,952] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user [2020-01-08 17:38:53,951] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/jobs_dag.py
+[2020-01-08 17:38:54,181] {base_task_runner.py:115} INFO - Job 76: Subtask get_current_user [2020-01-08 17:38:54,179] {cli.py:545} INFO - Running <TaskInstance: dag_id_0.get_current_user 2020-01-08T17:38:36.564037+00:00 [running]> on host 125293df2c01
+[2020-01-08 17:38:54,314] {bash_operator.py:81} INFO - Tmp dir root location: 
+ /tmp
+[2020-01-08 17:38:54,316] {bash_operator.py:91} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=dag_id_0
+AIRFLOW_CTX_TASK_ID=get_current_user
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-08T17:38:36.564037+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2020-01-08T17:38:36.564037+00:00
+[2020-01-08 17:38:54,317] {bash_operator.py:105} INFO - Temporary script location: /tmp/airflowtmp01vzd8z4/get_current_userwda5766k
+[2020-01-08 17:38:54,318] {bash_operator.py:115} INFO - Running command: echo "$USER"
+[2020-01-08 17:38:54,334] {bash_operator.py:124} INFO - Output:
+[2020-01-08 17:38:54,337] {bash_operator.py:128} INFO - 
+[2020-01-08 17:38:54,338] {bash_operator.py:132} INFO - Command exited with return code 0
+[2020-01-08 17:38:55,948] {logging_mixin.py:112} INFO - [2020-01-08 17:38:55,948] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.948544 s
+[2020-01-08 17:39:00,900] {logging_mixin.py:112} INFO - [2020-01-08 17:39:00,900] {local_task_job.py:103} INFO - Task exited with return code 0

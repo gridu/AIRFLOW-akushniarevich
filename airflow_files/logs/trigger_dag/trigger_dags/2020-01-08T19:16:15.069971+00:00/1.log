@@ -1,0 +1,24 @@
+[2020-01-08 19:16:48,680] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.trigger_dags 2020-01-08T19:16:15.069971+00:00 [queued]>
+[2020-01-08 19:16:48,831] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.trigger_dags 2020-01-08T19:16:15.069971+00:00 [queued]>
+[2020-01-08 19:16:48,832] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 19:16:48,832] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-08 19:16:48,833] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 19:16:48,866] {taskinstance.py:862} INFO - Executing <Task(TriggerDagRunOperator): trigger_dags> on 2020-01-08T19:16:15.069971+00:00
+[2020-01-08 19:16:48,868] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag', 'trigger_dags', '2020-01-08T19:16:15.069971+00:00', '--job_id', '96', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmpdby_fl1l']
+[2020-01-08 19:16:49,861] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 19:16:49,861] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags   FutureWarning
+[2020-01-08 19:16:49,862] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 19:16:49,863] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 19:16:49,863] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 19:16:49,863] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 19:16:49,864] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 19:16:49,864] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 19:16:49,963] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags [2020-01-08 19:16:49,963] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1825
+[2020-01-08 19:16:50,679] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags [2020-01-08 19:16:50,679] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 19:16:50,680] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags [2020-01-08 19:16:50,679] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-08 19:16:50,864] {base_task_runner.py:115} INFO - Job 96: Subtask trigger_dags [2020-01-08 19:16:50,863] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.trigger_dags 2020-01-08T19:16:15.069971+00:00 [running]> on host 6667999380fe
+[2020-01-08 19:16:50,971] {logging_mixin.py:112} INFO - [2020-01-08 19:16:50,971] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/jobs_dag.py
+[2020-01-08 19:16:53,516] {logging_mixin.py:112} INFO - [2020-01-08 19:16:53,516] {local_task_job.py:124} WARNING - Time since last heartbeat(0.05 s) < heartrate(5.0 s), sleeping for 4.95222 s
+[2020-01-08 19:16:58,487] {logging_mixin.py:112} INFO - [2020-01-08 19:16:58,483] {local_task_job.py:103} INFO - Task exited with return code 0

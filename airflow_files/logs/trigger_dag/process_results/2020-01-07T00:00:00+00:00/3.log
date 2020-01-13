@@ -1,0 +1,96 @@
+[2020-01-08 17:29:57,243] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:29:57,324] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: trigger_dag.process_results 2020-01-07T00:00:00+00:00 [queued]>
+[2020-01-08 17:29:57,326] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:29:57,326] {taskinstance.py:842} INFO - Starting attempt 3 of 3
+[2020-01-08 17:29:57,327] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 17:29:57,387] {taskinstance.py:862} INFO - Executing <Task(SubDagOperator): process_results> on 2020-01-07T00:00:00+00:00
+[2020-01-08 17:29:57,388] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'trigger_dag', 'process_results', '2020-01-07T00:00:00+00:00', '--job_id', '68', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmp6fwwucmi']
+[2020-01-08 17:29:58,425] {base_task_runner.py:115} INFO - Job 68: Subtask process_results /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 17:29:58,426] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   FutureWarning
+[2020-01-08 17:29:58,426] {base_task_runner.py:115} INFO - Job 68: Subtask process_results /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 17:29:58,427] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 17:29:58,427] {base_task_runner.py:115} INFO - Job 68: Subtask process_results /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 17:29:58,427] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 17:29:58,428] {base_task_runner.py:115} INFO - Job 68: Subtask process_results /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 17:29:58,428] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 17:29:58,550] {base_task_runner.py:115} INFO - Job 68: Subtask process_results [2020-01-08 17:29:58,549] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=389
+[2020-01-08 17:29:59,198] {base_task_runner.py:115} INFO - Job 68: Subtask process_results [2020-01-08 17:29:59,198] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 17:29:59,199] {base_task_runner.py:115} INFO - Job 68: Subtask process_results [2020-01-08 17:29:59,198] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-08 17:29:59,404] {base_task_runner.py:115} INFO - Job 68: Subtask process_results [2020-01-08 17:29:59,403] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.process_results 2020-01-07T00:00:00+00:00 [running]> on host 125293df2c01
+[2020-01-08 17:30:00,270] {logging_mixin.py:112} INFO - [2020-01-08 17:30:00,270] {base_executor.py:59} INFO - Adding to queue: ['airflow', 'run', 'trigger_dag.process_results', 'remove_run_file', '2020-01-07T00:00:00+00:00', '--local', '--pool', 'default_pool', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmpnbs_3lp6']
+[2020-01-08 17:30:02,209] {logging_mixin.py:112} INFO - [2020-01-08 17:30:02,209] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.962533 s
+[2020-01-08 17:30:04,544] {logging_mixin.py:112} INFO - [2020-01-08 17:30:04,544] {sequential_executor.py:45} INFO - Executing command: ['airflow', 'run', 'trigger_dag.process_results', 'remove_run_file', '2020-01-07T00:00:00+00:00', '--local', '--pool', 'default_pool', '-sd', 'DAGS_FOLDER/trigger_dag.py', '--cfg_path', '/tmp/tmpnbs_3lp6']
+[2020-01-08 17:30:05,323] {base_task_runner.py:115} INFO - Job 68: Subtask process_results /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 17:30:05,324] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   FutureWarning
+[2020-01-08 17:30:05,324] {base_task_runner.py:115} INFO - Job 68: Subtask process_results /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 17:30:05,325] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 17:30:05,325] {base_task_runner.py:115} INFO - Job 68: Subtask process_results /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 17:30:05,326] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 17:30:05,326] {base_task_runner.py:115} INFO - Job 68: Subtask process_results /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 17:30:05,327] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 17:30:05,466] {base_task_runner.py:115} INFO - Job 68: Subtask process_results [2020-01-08 17:30:05,465] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=402
+[2020-01-08 17:30:06,115] {base_task_runner.py:115} INFO - Job 68: Subtask process_results [2020-01-08 17:30:06,115] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 17:30:06,116] {base_task_runner.py:115} INFO - Job 68: Subtask process_results [2020-01-08 17:30:06,115] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/trigger_dag.py
+[2020-01-08 17:30:06,294] {base_task_runner.py:115} INFO - Job 68: Subtask process_results [2020-01-08 17:30:06,294] {cli.py:545} INFO - Running <TaskInstance: trigger_dag.process_results.remove_run_file 2020-01-07T00:00:00+00:00 [queued]> on host 125293df2c01
+[2020-01-08 17:30:07,320] {logging_mixin.py:112} INFO - [2020-01-08 17:30:07,319] {local_task_job.py:124} WARNING - Time since last heartbeat(0.06 s) < heartrate(5.0 s), sleeping for 4.944814 s
+[2020-01-08 17:30:12,368] {logging_mixin.py:112} INFO - [2020-01-08 17:30:12,367] {local_task_job.py:124} WARNING - Time since last heartbeat(0.03 s) < heartrate(5.0 s), sleeping for 4.968469 s
+[2020-01-08 17:30:16,597] {logging_mixin.py:112} INFO - [2020-01-08 17:30:16,597] {backfill_job.py:204} ERROR - Task instance <TaskInstance: trigger_dag.process_results.remove_run_file 2020-01-07 00:00:00+00:00 [failed]> failed
+[2020-01-08 17:30:16,731] {logging_mixin.py:112} INFO - [2020-01-08 17:30:16,731] {backfill_job.py:363} INFO - [backfill progress] | finished run 0 of 1 | tasks waiting: 1 | succeeded: 2 | running: 0 | failed: 1 | skipped: 0 | deadlocked: 0 | not ready: 1
+[2020-01-08 17:30:16,845] {logging_mixin.py:112} INFO - [2020-01-08 17:30:16,845] {backfill_job.py:460} ERROR - Task instance <TaskInstance: trigger_dag.process_results.finished_timestamp 2020-01-07 00:00:00+00:00 [upstream_failed]> with upstream_failed state
+[2020-01-08 17:30:17,009] {logging_mixin.py:112} INFO - [2020-01-08 17:30:17,009] {dagrun.py:308} INFO - Marking run <DagRun trigger_dag.process_results @ 2020-01-07 00:00:00+00:00: backfill_2020-01-07T00:00:00+00:00, externally triggered: False> failed
+[2020-01-08 17:30:17,045] {logging_mixin.py:112} INFO - [2020-01-08 17:30:17,044] {backfill_job.py:363} INFO - [backfill progress] | finished run 1 of 1 | tasks waiting: 0 | succeeded: 2 | running: 0 | failed: 2 | skipped: 0 | deadlocked: 0 | not ready: 0
+[2020-01-08 17:30:17,142] {taskinstance.py:1058} ERROR - ---------------------------------------------------
+Some task instances failed:
+{('trigger_dag.process_results', 'remove_run_file', datetime.datetime(2020, 1, 7, 0, 0, tzinfo=<TimezoneInfo [UTC, GMT, +00:00:00, STD]>), 3), ('trigger_dag.process_results', 'finished_timestamp', datetime.datetime(2020, 1, 7, 0, 0, tzinfo=<TimezoneInfo [UTC, GMT, +00:00:00, STD]>), 1)}
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 930, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/usr/local/lib/python3.7/site-packages/airflow/operators/subdag_operator.py", line 102, in execute
+    executor=self.executor)
+  File "/usr/local/lib/python3.7/site-packages/airflow/models/dag.py", line 1284, in run
+    job.run()
+  File "/usr/local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 222, in run
+    self._execute()
+  File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/airflow/jobs/backfill_job.py", line 776, in _execute
+    raise AirflowException(err)
+airflow.exceptions.AirflowException: ---------------------------------------------------
+Some task instances failed:
+{('trigger_dag.process_results', 'remove_run_file', datetime.datetime(2020, 1, 7, 0, 0, tzinfo=<TimezoneInfo [UTC, GMT, +00:00:00, STD]>), 3), ('trigger_dag.process_results', 'finished_timestamp', datetime.datetime(2020, 1, 7, 0, 0, tzinfo=<TimezoneInfo [UTC, GMT, +00:00:00, STD]>), 1)}
+
+[2020-01-08 17:30:17,145] {taskinstance.py:1089} INFO - Marking task as FAILED.
+[2020-01-08 17:30:17,203] {base_task_runner.py:115} INFO - Job 68: Subtask process_results Traceback (most recent call last):
+[2020-01-08 17:30:17,205] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/bin/airflow", line 37, in <module>
+[2020-01-08 17:30:17,206] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     args.func(args)
+[2020-01-08 17:30:17,206] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/utils/cli.py", line 74, in wrapper
+[2020-01-08 17:30:17,207] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     return f(*args, **kwargs)
+[2020-01-08 17:30:17,207] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 551, in run
+[2020-01-08 17:30:17,209] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     _run(args, dag, ti)
+[2020-01-08 17:30:17,209] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/bin/cli.py", line 469, in _run
+[2020-01-08 17:30:17,210] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     pool=args.pool,
+[2020-01-08 17:30:17,210] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2020-01-08 17:30:17,210] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     return func(*args, **kwargs)
+[2020-01-08 17:30:17,211] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 930, in _run_raw_task
+[2020-01-08 17:30:17,211] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     result = task_copy.execute(context=context)
+[2020-01-08 17:30:17,212] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/operators/subdag_operator.py", line 102, in execute
+[2020-01-08 17:30:17,212] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     executor=self.executor)
+[2020-01-08 17:30:17,212] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/models/dag.py", line 1284, in run
+[2020-01-08 17:30:17,213] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     job.run()
+[2020-01-08 17:30:17,213] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 222, in run
+[2020-01-08 17:30:17,214] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     self._execute()
+[2020-01-08 17:30:17,214] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/utils/db.py", line 74, in wrapper
+[2020-01-08 17:30:17,215] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     return func(*args, **kwargs)
+[2020-01-08 17:30:17,215] {base_task_runner.py:115} INFO - Job 68: Subtask process_results   File "/usr/local/lib/python3.7/site-packages/airflow/jobs/backfill_job.py", line 776, in _execute
+[2020-01-08 17:30:17,216] {base_task_runner.py:115} INFO - Job 68: Subtask process_results     raise AirflowException(err)
+[2020-01-08 17:30:17,216] {base_task_runner.py:115} INFO - Job 68: Subtask process_results airflow.exceptions.AirflowException: ---------------------------------------------------
+[2020-01-08 17:30:17,216] {base_task_runner.py:115} INFO - Job 68: Subtask process_results Some task instances failed:
+[2020-01-08 17:30:17,217] {base_task_runner.py:115} INFO - Job 68: Subtask process_results {('trigger_dag.process_results', 'remove_run_file', datetime.datetime(2020, 1, 7, 0, 0, tzinfo=<TimezoneInfo [UTC, GMT, +00:00:00, STD]>), 3), ('trigger_dag.process_results', 'finished_timestamp', datetime.datetime(2020, 1, 7, 0, 0, tzinfo=<TimezoneInfo [UTC, GMT, +00:00:00, STD]>), 1)}
+[2020-01-08 17:30:17,217] {base_task_runner.py:115} INFO - Job 68: Subtask process_results 
+[2020-01-08 17:30:17,417] {logging_mixin.py:112} INFO - [2020-01-08 17:30:17,416] {local_task_job.py:167} WARNING - State of this instance has been externally set to failed. Taking the poison pill.
+[2020-01-08 17:30:17,418] {helpers.py:308} INFO - Sending Signals.SIGTERM to GPID 389
+[2020-01-08 17:30:17,451] {helpers.py:286} INFO - Process psutil.Process(pid=389, status='terminated') (389) terminated with exit code -15
+[2020-01-08 17:30:17,452] {logging_mixin.py:112} INFO - [2020-01-08 17:30:17,452] {local_task_job.py:124} WARNING - Time since last heartbeat(0.08 s) < heartrate(5.0 s), sleeping for 4.923538 s
+[2020-01-08 17:30:22,383] {logging_mixin.py:112} INFO - [2020-01-08 17:30:22,382] {local_task_job.py:103} INFO - Task exited with return code 0

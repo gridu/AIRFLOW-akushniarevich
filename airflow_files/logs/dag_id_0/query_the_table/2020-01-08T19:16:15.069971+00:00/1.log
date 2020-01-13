@@ -1,0 +1,31 @@
+[2020-01-08 19:17:44,540] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.query_the_table 2020-01-08T19:16:15.069971+00:00 [queued]>
+[2020-01-08 19:17:44,633] {taskinstance.py:630} INFO - Dependencies all met for <TaskInstance: dag_id_0.query_the_table 2020-01-08T19:16:15.069971+00:00 [queued]>
+[2020-01-08 19:17:44,633] {taskinstance.py:841} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 19:17:44,634] {taskinstance.py:842} INFO - Starting attempt 1 of 1
+[2020-01-08 19:17:44,634] {taskinstance.py:843} INFO - 
+--------------------------------------------------------------------------------
+[2020-01-08 19:17:44,689] {taskinstance.py:862} INFO - Executing <Task(PythonOperator): query_the_table> on 2020-01-08T19:16:15.069971+00:00
+[2020-01-08 19:17:44,692] {base_task_runner.py:133} INFO - Running: ['airflow', 'run', 'dag_id_0', 'query_the_table', '2020-01-08T19:16:15.069971+00:00', '--job_id', '106', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/jobs_dag.py', '--cfg_path', '/tmp/tmp2ot9pbmv']
+[2020-01-08 19:17:45,745] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table /usr/local/lib/python3.7/site-packages/airflow/configuration.py:226: FutureWarning: The task_runner setting in [core] has the old default value of 'BashTaskRunner'. This value has been changed to 'StandardTaskRunner' in the running config, but please update your config before Apache Airflow 2.0.
+[2020-01-08 19:17:45,745] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table   FutureWarning
+[2020-01-08 19:17:45,746] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:65: DeprecationWarning: The elasticsearch_host option in [elasticsearch] has been renamed to host - the old setting has been used, but please update your config.
+[2020-01-08 19:17:45,746] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table   ELASTICSEARCH_HOST = conf.get('elasticsearch', 'HOST')
+[2020-01-08 19:17:45,747] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:67: DeprecationWarning: The elasticsearch_log_id_template option in [elasticsearch] has been renamed to log_id_template - the old setting has been used, but please update your config.
+[2020-01-08 19:17:45,747] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table   ELASTICSEARCH_LOG_ID_TEMPLATE = conf.get('elasticsearch', 'LOG_ID_TEMPLATE')
+[2020-01-08 19:17:45,747] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table /usr/local/lib/python3.7/site-packages/airflow/config_templates/airflow_local_settings.py:69: DeprecationWarning: The elasticsearch_end_of_log_mark option in [elasticsearch] has been renamed to end_of_log_mark - the old setting has been used, but please update your config.
+[2020-01-08 19:17:45,748] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table   ELASTICSEARCH_END_OF_LOG_MARK = conf.get('elasticsearch', 'END_OF_LOG_MARK')
+[2020-01-08 19:17:45,887] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table [2020-01-08 19:17:45,886] {settings.py:252} INFO - settings.configure_orm(): Using pool settings. pool_size=5, max_overflow=10, pool_recycle=1800, pid=1901
+[2020-01-08 19:17:47,130] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table [2020-01-08 19:17:47,129] {__init__.py:51} INFO - Using executor CeleryExecutor
+[2020-01-08 19:17:47,131] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table [2020-01-08 19:17:47,130] {dagbag.py:92} INFO - Filling up the DagBag from /usr/local/airflow/dags/jobs_dag.py
+[2020-01-08 19:17:47,316] {base_task_runner.py:115} INFO - Job 106: Subtask query_the_table [2020-01-08 19:17:47,315] {cli.py:545} INFO - Running <TaskInstance: dag_id_0.query_the_table 2020-01-08T19:16:15.069971+00:00 [running]> on host 4c15a692b677
+[2020-01-08 19:17:47,441] {python_operator.py:105} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_ID=dag_id_0
+AIRFLOW_CTX_TASK_ID=query_the_table
+AIRFLOW_CTX_EXECUTION_DATE=2020-01-08T19:16:15.069971+00:00
+AIRFLOW_CTX_DAG_RUN_ID=trig__2020-01-08T19:16:15.069971+00:00
+[2020-01-08 19:17:47,495] {logging_mixin.py:112} INFO - [2020-01-08 19:17:47,494] {base_hook.py:84} INFO - Using connection to: id: postgres_default. Host: postgres, Port: 5432, Schema: airflow, Login: airflow, Password: XXXXXXXX, extra: {}
+[2020-01-08 19:17:47,728] {logging_mixin.py:112} INFO - [2020-01-08 19:17:47,728] {jobs_dag.py:49} INFO - SELECT COUNT(*) FROM clients
+[2020-01-08 19:17:47,728] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-01-08 19:17:49,440] {logging_mixin.py:112} INFO - [2020-01-08 19:17:49,440] {local_task_job.py:124} WARNING - Time since last heartbeat(0.04 s) < heartrate(5.0 s), sleeping for 4.964079 s
+[2020-01-08 19:17:54,409] {logging_mixin.py:112} INFO - [2020-01-08 19:17:54,408] {local_task_job.py:103} INFO - Task exited with return code 0
